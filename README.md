@@ -10,7 +10,7 @@ The Official Website Of DSC NIT SURAT
 ## Before commiting a change to version control:
 
 - Run `$ yarn format` and fix all the errors and for formatting the code
-- Before pushing the commit, run `$yarn prepush`. 
+- Before pushing the commit, run `$yarn prepush`
 
 This will help in keeping the code formatted and understandable.
 
@@ -37,6 +37,6 @@ This will help in keeping the code formatted and understandable.
 
 - `$ cd client && yarn install`
 
-- `$ npm start`
+- `$ yarn start`
 
 > This should run parallely. On `localhost:5000/express_backend`, you should get a message saying `Backend Connected` as the receiving message which shows the temporary connection between the front-end and back-end.

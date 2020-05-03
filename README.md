@@ -10,7 +10,7 @@ The Official Website Of DSC NIT SURAT
 ## Before commiting a change to version control:
 
 - Run `$ yarn format` and fix all the errors and for formatting the code
-- Before committing the message, run `$ yarn precommit` and before pushing the commit, run `$yarn prepush`. 
+- Before pushing the commit, run `$yarn prepush`. 
 
 This will help in keeping the code formatted and understandable.
 

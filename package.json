@@ -10,8 +10,6 @@
     "lint": "eslint . --fix",
     "pretty": "prettier '**/*.js' --write",
     "format": "npm run pretty && npm run lint",
-    "test": "karma start",
-    "precommit": "npm run lint && npm test",
     "prepush": "npm run lint"
   },
   "dependencies": {

@@ -1,0 +1,23 @@
+.LandingPage .dsc-body {
+    margin-top: 4rem;
+}
+
+.LandingPage .dsc-body .image {
+    position: fixed;
+    left: 10rem;
+    height: 650px;
+    width: 650px;
+}
+
+.LandingPage .dsc-body .context {
+    margin-top: 10rem;
+    font-size: 128px;
+    text-align: center;
+    float: right;
+    margin-right: 10rem;
+    font-family: "Roboto";
+}
+
+.LandingPage .dsc-body .highlight {
+    font-size: 84px;
+}

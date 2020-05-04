@@ -29,7 +29,7 @@ class LandingPage extends Component {
 			<div className="LandingPage">
 				<Navbars />
 				<div className="dsc-body">
-					<img src={Logo} className="image" />
+					<img src={Logo} className="image" alt="dsc-nitsurat"/>
 					<h1 className="context">
 						Here, you can <br />
 						{/*<code className="highlight">{this.textLoop()}</code>*/}

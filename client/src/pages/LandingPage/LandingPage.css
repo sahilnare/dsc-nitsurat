@@ -3,7 +3,7 @@
 }
 
 .LandingPage .dsc-body .image {
-    position: fixed;
+    position: relative;
     left: 10rem;
     height: 650px;
     width: 650px;
@@ -15,9 +15,105 @@
     text-align: center;
     float: right;
     margin-right: 10rem;
-    font-family: "Roboto";
+    font-family: "Open Sans";
 }
 
 .LandingPage .dsc-body .highlight {
     font-size: 84px;
+}
+
+@media screen and (min-width: 1475px) and (max-width: 1675px) {
+    .LandingPage .dsc-body .image {
+        left: 0;
+    }
+
+    .LandingPage .dsc-body .context {
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (min-width: 1275px) and (max-width: 1475px) {
+    .LandingPage .dsc-body .image {
+        height: 575px;
+        width: 575px;
+        left: 0;
+    }
+
+    .LandingPage .dsc-body .context {
+        font-size: 120px;
+        margin-right: 5.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1275px) {
+    .LandingPage .dsc-body .image {
+        height: 525px;
+        width: 525px;
+        left: 0;
+    }
+
+    .LandingPage .dsc-body .context {
+        font-size: 80px;
+        margin-right: 5.5rem;
+    }
+
+    .LandingPage .dsc-body .highlight {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .LandingPage .dsc-body {
+        margin-top: 1.5rem;
+    }
+
+    .LandingPage .dsc-body .image {
+        display: flex;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .LandingPage .dsc-body .context {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        font-size: 100px;
+    }
+
+    .LandingPage .dsc-body .highlight {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 650px) {
+    .LandingPage .dsc-body .image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .LandingPage .dsc-body .context {
+        font-size: 60px;
+    }
+
+    .LandingPage .dsc-body .highlight {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .LandingPage .dsc-body .image {
+        height: 300px;
+        width: 300px;
+    }
+
+    .LandingPage .dsc-body .context {
+        font-size: 50px;
+    }
+
+    .LandingPage .dsc-body .highlight {
+        font-size: 35px;
+    }
 }

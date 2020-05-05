@@ -3,36 +3,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbars from "../../components/Navbars/Navbars";
 import Logo from "../../img/dsc.jpg";
 import ReactTypingEffect from "react-typing-effect";
+import { Container, Row, Col } from "react-bootstrap";
 
 import "./LandingPage.css";
 
 class LandingPage extends Component {
-	// textLoop = () => {
-	// 	let textArray = ["develop.", "innovate.", "connect.", "build.", "grow."];
-	// 	let minNumber = 0;
-	// 	let maxNumber = 5;
-	//
-	// 	setInterval(() => {
-	// 		if (minNumber < maxNumber) {
-	// 			document.getElementsByClassName("highlight")[0].innerHTML = textArray[minNumber];
-	// 			++minNumber;
-	// 		} else if (minNumber === maxNumber) {
-	// 			minNumber = 0;
-	// 			document.getElementsByClassName("highlight")[0].innerHTML = textArray[minNumber];
-	// 			++minNumber;
-	// 		}
-	// 	}, 4000);
-	// };
 
 	render() {
 		return (
 			<div className="LandingPage">
 				<Navbars />
-				<div className="dsc-body">
+				{/*<div className="dsc-body">
 					<img src={Logo} className="image" alt="dsc-nitsurat" />
 					<h1 className="context">
 						Here, you can <br />
-						{/*<code className="highlight">{this.textLoop()}</code>*/}
 						<ReactTypingEffect
 							className="highlight"
 							text={["develop.", "innovate.", "connect.", "build.", "grow."]}
@@ -41,7 +25,26 @@ class LandingPage extends Component {
 							speed={100}
 						/>
 					</h1>
-				</div>
+				</div>*/}
+				<Container fluid>
+				  <Row>
+						<Col>
+							<img src={Logo} className="image" alt="dsc-nitsurat" />
+						</Col>
+				    <Col>
+							<h1 className="context">
+								Here, you can <br />
+								<ReactTypingEffect
+									className="highlight"
+									text={["develop.", "innovate.", "connect.", "build.", "grow."]}
+									eraseDelay={1000}
+									typingDelay={2000}
+									speed={100}
+								/>
+							</h1>
+						</Col>
+				  </Row>
+				</Container>
 			</div>
 		);
 	}

@@ -22,7 +22,7 @@
     font-size: 84px;
 }
 
-@media screen and (min-width: 1475px) and (max-width: 1675px) {
+/* @media screen and (min-width: 1475px) and (max-width: 1675px) {
     .LandingPage .dsc-body .image {
         left: 0;
     }
@@ -116,4 +116,4 @@
     .LandingPage .dsc-body .highlight {
         font-size: 35px;
     }
-}
+} */

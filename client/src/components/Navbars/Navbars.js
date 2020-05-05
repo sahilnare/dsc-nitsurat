@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
 import Logo from "../../img/logo.jpg";
-import LogoMobile from "../../img/dsc-mobile.jpg";
 import "./Navbars.css";
 
 class Navbars extends Component {
 	state = {
 		src: Logo,
 		widthCheck: false,
-		srcMobile: LogoMobile,
 	};
 
 	componentDidMount() {
@@ -26,11 +24,12 @@ class Navbars extends Component {
 			<div>
 				<Navbar className="Navbar" expand="lg" bg="light" variant="light">
 					<Navbar.Brand href="/">
-						{!this.state.widthCheck ? (
-							<img src={this.state.src} alt="dsc" />
+						<img src={this.state.src} alt="dsc" />
+						{/* {!this.state.widthCheck ? (
+							<p></p>
 						) : (
-							<img src={this.state.srcMobile} alt="dsc" />
-						)}
+							<p></p>
+						)} */}
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
@@ -40,6 +39,12 @@ class Navbars extends Component {
 							</Nav.Link>
 							<Nav.Link href="/about" className="nav-item">
 								<h5>About</h5>
+							</Nav.Link>
+							<Nav.Link href="/blog" className="nav-item">
+								<h5>Blog</h5>
+							</Nav.Link>
+							<Nav.Link href="/team" className="nav-item">
+								<h5>Team</h5>
 							</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>

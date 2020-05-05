@@ -11,7 +11,6 @@ import 'aos/dist/aos.css';
 import "./LandingPage.css";
 
 class LandingPage extends Component {
-
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -33,17 +32,17 @@ class LandingPage extends Component {
 			this.setState({ aosOffset: "400", featArr: true });
 		}
 	}
-
+  
 	render() {
 		return (
 			<div className="Landing">
 				<Navbars />
 				<Container fluid className="LandingPage">
-				  <Row className="dsc-body">
+					<Row className="dsc-body">
 						<Col lg={6} className="image">
 							<img src={Logo} className="dsc-logo" alt="dsc-nitsurat" />
 						</Col>
-				    <Col lg={6}>
+						<Col lg={6}>
 							<h1 className="context">
 								Here, you can <br />
 								<ReactTypingEffect

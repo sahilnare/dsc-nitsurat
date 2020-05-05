@@ -1,0 +1,67 @@
+.Construction .image {
+    width: 45rem;
+    height: 35rem;
+    display: flex; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.Construction .Loader {
+    display: flex;
+}
+
+.Construction .Loader h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spinner-border {
+    display: flex; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 575px) and (max-width: 635px) {
+    .Construction .image {
+        width: 40rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .Construction .Loader h1 {
+        text-align: center;
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 485px) and (max-width: 575px) {
+    .Construction .image {
+        width: 35rem;
+        height: 28rem;
+    }
+}
+
+@media screen and (min-width: 445px) and (max-width: 485px) {
+    .Construction .image {
+        width: 32rem;
+        height: 28rem;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 445px) {
+    .Construction .image {
+        width: 30rem;
+        height: 28rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .Construction .image {
+        width: 23rem;
+        height: 25rem;
+    }
+}

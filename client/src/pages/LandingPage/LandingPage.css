@@ -1,26 +1,6 @@
-/* .LandingPage .dsc-body {
-    margin-top: 4rem;
-}
+.LandingPage .dsc-body {
 
-.LandingPage .dsc-body .image {
-    position: relative;
-    left: 10rem;
-    height: 650px;
-    width: 650px;
 }
-
-.LandingPage .dsc-body .context {
-    margin-top: 10rem;
-    font-size: 128px;
-    text-align: center;
-    float: right;
-    margin-right: 10rem;
-    font-family: "Open Sans";
-}
-
-.LandingPage .dsc-body .highlight {
-    font-size: 84px;
-} */
 
 .LandingPage .dsc-body .image {
   margin-top: 3rem;
@@ -43,6 +23,27 @@
   padding: 0 90px;
 }
 
+.LandingPage .dsc-features {
+    padding: 0 40px;
+    margin-top: 30px;
+}
+
+.LandingPage .dsc-features .feature-image {
+
+}
+
+.LandingPage .dsc-features .feature-image .feature-design {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.LandingPage .dsc-features .feature-description {
+  padding: 0 80px;
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media screen and (min-width: 1475px) and (max-width: 1675px) {

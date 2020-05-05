@@ -43,6 +43,8 @@
   flex-direction: vertical;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 60px;
 }
 
 
@@ -63,6 +65,19 @@
     .LandingPage .dsc-body .highlight {
         font-size: 75px;
     }
+
+    .LandingPage .dsc-features {
+        padding: 0 40px;
+    }
+
+    .LandingPage .dsc-features .feature-image {
+
+    }
+
+    .LandingPage .dsc-features .feature-description {
+      padding: 0 70px;
+      font-size: 55px;
+    }
 }
 
 @media screen and (min-width: 1275px) and (max-width: 1475px) {
@@ -82,6 +97,19 @@
     .LandingPage .dsc-body .highlight {
         font-size: 60px;
     }
+
+    .LandingPage .dsc-features {
+        padding: 0 40px;
+    }
+
+    .LandingPage .dsc-features .feature-image {
+
+    }
+
+    .LandingPage .dsc-features .feature-description {
+      padding: 0 60px;
+      font-size: 50px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1275px) {
@@ -100,6 +128,19 @@
 
     .LandingPage .dsc-body .highlight {
         font-size: 50px;
+    }
+
+    .LandingPage .dsc-features {
+        padding: 0 40px;
+    }
+
+    .LandingPage .dsc-features .feature-image {
+
+    }
+
+    .LandingPage .dsc-features .feature-description {
+      padding: 0 70px;
+      font-size: 45px;
     }
 }
 
@@ -124,6 +165,19 @@
     .LandingPage .dsc-body .highlight {
       font-size: 50px;
     }
+
+    .LandingPage .dsc-features {
+        padding: 0 40px;
+    }
+
+    .LandingPage .dsc-features .feature-image {
+      padding: 0 100px;
+    }
+
+    .LandingPage .dsc-features .feature-description {
+      padding: 0 70px;
+      font-size: 40px;
+    }
 }
 
 @media screen and (min-width: 420px) and (max-width: 650px) {
@@ -144,6 +198,19 @@
     .LandingPage .dsc-body .highlight {
       font-size: 38px;
     }
+
+    .LandingPage .dsc-features {
+        padding: 0 40px;
+    }
+
+    .LandingPage .dsc-features .feature-image {
+      padding: 0 60px;
+    }
+
+    .LandingPage .dsc-features .feature-description {
+      padding: 0 40px;
+      font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -152,7 +219,7 @@
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
-      padding: 0 20px;
+      padding: 0 10px;
     }
 
     .LandingPage .dsc-body .context {
@@ -163,5 +230,18 @@
 
     .LandingPage .dsc-body .highlight {
         font-size: 30px;
+    }
+
+    .LandingPage .dsc-features {
+        padding: 0 30px;
+    }
+
+    .LandingPage .dsc-features .feature-image {
+      padding: 0 20px;
+    }
+
+    .LandingPage .dsc-features .feature-description {
+      padding: 0 20px;
+      font-size: 18px;
     }
 }

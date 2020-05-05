@@ -12,8 +12,26 @@ import "./LandingPage.css";
 
 class LandingPage extends Component {
 
+	constructor(props) {
+		super(props);
+		this.state = {
+			aosOffset: "400",
+			featArr: true
+		}
+	}
+
 	componentDidMount() {
 		AOS.init();
+		window.addEventListener("resize", this.resize.bind(this));
+		this.resize();
+	}
+
+	resize() {
+		if(window.innerWidth <= 991) {
+			this.setState({ aosOffset: "200", featArr: false });
+		} else {
+			this.setState({ aosOffset: "400", featArr: true });
+		}
 	}
 
 	render() {
@@ -39,33 +57,44 @@ class LandingPage extends Component {
 						</Col>
 				  </Row>
 					<Row className="dsc-features">
-						<Col className="feature-image" xs={4} data-aos="fade-right" data-aos-offset="400">
+						<Col className="feature-image" lg={4} data-aos="fade-right" data-aos-offset={this.state.aosOffset}>
 							<img src={Logo} className="feature-design" alt="dsc-nitsurat" />
 						</Col>
-						<Col className="feature-description" data-aos="fade-left" data-aos-offset="400">
+						<Col className="feature-description" data-aos="fade-left" data-aos-offset={this.state.aosOffset}>
 							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+							Ut enim ad minim laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</h3>
 						</Col>
 					</Row>
+					{
+						this.state.featArr ? (
+							<Row className="dsc-features">
+								<Col className="feature-description" data-aos="fade-right" data-aos-offset={this.state.aosOffset}>
+									<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</h3>
+								</Col>
+								<Col className="feature-image" lg={4} data-aos="fade-left" data-aos-offset={this.state.aosOffset}>
+									<img src={Logo} className="feature-design" alt="dsc-nitsurat" />
+								</Col>
+							</Row>
+						) : (
+							<Row className="dsc-features">
+								<Col className="feature-image" lg={4} data-aos="fade-left" data-aos-offset={this.state.aosOffset}>
+									<img src={Logo} className="feature-design" alt="dsc-nitsurat" />
+								</Col>
+								<Col className="feature-description" data-aos="fade-right" data-aos-offset={this.state.aosOffset}>
+									<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</h3>
+								</Col>
+							</Row>
+						)
+					}
 					<Row className="dsc-features">
-						<Col className="feature-description" data-aos="fade-right" data-aos-offset="400">
-							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-						</Col>
-						<Col className="feature-image" xs={4} data-aos="fade-left" data-aos-offset="400">
+						<Col className="feature-image" lg={4} data-aos="fade-right" data-aos-offset={this.state.aosOffset}>
 							<img src={Logo} className="feature-design" alt="dsc-nitsurat" />
 						</Col>
-					</Row>
-					<Row className="dsc-features">
-						<Col className="feature-image" xs={4} data-aos="fade-right" data-aos-offset="400">
-							<img src={Logo} className="feature-design" alt="dsc-nitsurat" />
-						</Col>
-						<Col className="feature-description" data-aos="fade-left" data-aos-offset="400">
+						<Col className="feature-description" data-aos="fade-left" data-aos-offset={this.state.aosOffset}>
 							<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+							Ut enim ad minim laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</h3>
 						</Col>
 					</Row>
 				</Container>

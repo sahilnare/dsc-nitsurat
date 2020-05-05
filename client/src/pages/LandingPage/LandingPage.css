@@ -1,4 +1,4 @@
-.LandingPage .dsc-body {
+/* .LandingPage .dsc-body {
     margin-top: 4rem;
 }
 
@@ -20,42 +20,62 @@
 
 .LandingPage .dsc-body .highlight {
     font-size: 84px;
+} */
+
+.LandingPage .dsc-body .image {
+  margin-top: 3rem;
 }
 
-/* @media screen and (min-width: 1475px) and (max-width: 1675px) {
+.LandingPage .dsc-body .context {
+    margin-top: 15rem;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Open Sans";
+}
+
+.LandingPage .dsc-body .highlight {
+    font-size: 84px;
+}
+
+.LandingPage .dsc-body .image .dsc-logo {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+
+
+@media screen and (min-width: 1475px) and (max-width: 1675px) {
     .LandingPage .dsc-body .image {
-        left: 0;
+
+    }
+
+    .LandingPage .dsc-body .image .dsc-logo {
+      padding: 0 75px;
     }
 
     .LandingPage .dsc-body .context {
-        margin-right: 6rem;
+        font-size: 85px;
+        margin-top: 13rem;
+    }
+
+    .LandingPage .dsc-body .highlight {
+        font-size: 75px;
     }
 }
 
 @media screen and (min-width: 1275px) and (max-width: 1475px) {
     .LandingPage .dsc-body .image {
-        height: 575px;
-        width: 575px;
-        left: 0;
+      margin-top: 2rem;
+    }
+
+    .LandingPage .dsc-body .image .dsc-logo {
+      padding: 0 60px;
     }
 
     .LandingPage .dsc-body .context {
-        font-size: 120px;
-        margin-right: 5.5rem;
-    }
-
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1275px) {
-    .LandingPage .dsc-body .image {
-        height: 525px;
-        width: 525px;
-        left: 0;
-    }
-
-    .LandingPage .dsc-body .context {
-        font-size: 80px;
-        margin-right: 5.5rem;
+        font-size: 70px;
+        margin-top: 11rem;
     }
 
     .LandingPage .dsc-body .highlight {
@@ -63,57 +83,84 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .LandingPage .dsc-body {
-        margin-top: 1.5rem;
+@media screen and (min-width: 992px) and (max-width: 1275px) {
+    .LandingPage .dsc-body .image {
+
     }
 
-    .LandingPage .dsc-body .image {
-        display: flex;
-        left: 0;
-        margin-left: auto;
-        margin-right: auto;
+    .LandingPage .dsc-body .image .dsc-logo {
+      padding: 0 50px;
     }
 
     .LandingPage .dsc-body .context {
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        font-size: 100px;
+        font-size: 60px;
+        margin-top: 9rem;
     }
 
     .LandingPage .dsc-body .highlight {
-        font-size: 80px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
+    .LandingPage .dsc-body {
+    }
+
+    .LandingPage .dsc-body .image {
+      margin-top: 1rem;
+    }
+
+    .LandingPage .dsc-body .image .dsc-logo {
+      padding: 0 70px;
+    }
+
+    .LandingPage .dsc-body .context {
+      font-size: 60px;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    .LandingPage .dsc-body .highlight {
+      font-size: 50px;
     }
 }
 
 @media screen and (min-width: 420px) and (max-width: 650px) {
     .LandingPage .dsc-body .image {
-        height: 400px;
-        width: 400px;
+      margin-top: 0.5rem;
+    }
+
+    .LandingPage .dsc-body .image .dsc-logo {
+      padding: 0 40px;
     }
 
     .LandingPage .dsc-body .context {
-        font-size: 60px;
+      font-size: 45px;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
     }
 
     .LandingPage .dsc-body .highlight {
-        font-size: 45px;
+      font-size: 38px;
     }
 }
 
 @media screen and (max-width: 420px) {
     .LandingPage .dsc-body .image {
-        height: 300px;
-        width: 300px;
+
+    }
+
+    .LandingPage .dsc-body .image .dsc-logo {
+      padding: 0 20px;
     }
 
     .LandingPage .dsc-body .context {
-        font-size: 50px;
+      font-size: 38px;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
     }
 
     .LandingPage .dsc-body .highlight {
-        font-size: 35px;
+        font-size: 30px;
     }
-} */
+}

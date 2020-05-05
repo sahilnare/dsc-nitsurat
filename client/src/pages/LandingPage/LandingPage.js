@@ -13,25 +13,12 @@ class LandingPage extends Component {
 		return (
 			<div className="LandingPage">
 				<Navbars />
-				{/*<div className="dsc-body">
-					<img src={Logo} className="image" alt="dsc-nitsurat" />
-					<h1 className="context">
-						Here, you can <br />
-						<ReactTypingEffect
-							className="highlight"
-							text={["develop.", "innovate.", "connect.", "build.", "grow."]}
-							eraseDelay={1000}
-							typingDelay={2000}
-							speed={100}
-						/>
-					</h1>
-				</div>*/}
-				<Container fluid>
-				  <Row>
-						<Col>
-							<img src={Logo} className="image" alt="dsc-nitsurat" />
+				<Container fluid className="LandingPage">
+				  <Row className="dsc-body">
+						<Col lg={6} className="image">
+							<img src={Logo} className="dsc-logo" alt="dsc-nitsurat" />
 						</Col>
-				    <Col>
+				    <Col lg={6}>
 							<h1 className="context">
 								Here, you can <br />
 								<ReactTypingEffect

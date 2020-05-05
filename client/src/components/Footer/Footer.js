@@ -5,8 +5,8 @@ import SocialLogo from "../../img/social-media.png";
 import "./Footer.css";
 
 class Footer extends Component {
-    state = {
-		widthCheck: false
+	state = {
+		widthCheck: false,
 	};
 
 	componentDidMount() {
@@ -16,22 +16,25 @@ class Footer extends Component {
 
 	resize() {
 		this.setState({ widthCheck: window.innerWidth < 767 });
-    }
-    
+	}
+
 	render() {
 		return (
 			<footer className="site-footer">
 				<div className="container">
 					<div className="row">
 						<div className="col-xs-6 col-sm-6 col-md-6">
-                            {!this.state.widthCheck ? 
-                                <img src={ SocialLogo } alt="social" className="social" />
-                                : 
-                                <h6 className="quote"><i><q>You don't need a 100 person company to develop that idea.</q></i></h6>
-                            }
-							
+							{!this.state.widthCheck ? (
+								<img src={SocialLogo} alt="social" className="social" />
+							) : (
+								<h6 className="quote">
+									<i>
+										<q>You don't need a 100 person company to develop that idea.</q>
+									</i>
+								</h6>
+							)}
 						</div>
-                        <div className="col-xs-3 col-sm-3 col-md-3"></div>						
+						<div className="col-xs-3 col-sm-3 col-md-3"></div>
 						<div className="explore col-xs-3 col-sm-3 col-md-3">
 							<h6>Explore</h6>
 							<ul className="footer-links">
@@ -66,7 +69,7 @@ class Footer extends Component {
 
 						<div className="col-md-4 col-sm-6 col-xs-12">
 							<ul className="social-icons">
-                                <li>
+								<li>
 									<a className="github" href="https://github.com/dsc-nit-surat/" target="_blank">
 										<FaGithub />
 									</a>

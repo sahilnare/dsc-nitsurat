@@ -5,16 +5,16 @@ import Navbars from "../../components/Navbars/Navbars";
 import Construction from "../../components/Construction/Construction";
 import Footer from "../../components/Footer/Footer";
 
-class ConstructPage extends Component { 
-    render() {
-        return (
-            <div>
-                <Navbars />
-                <Construction />
-                <Footer />
-            </div>
-        );
-    }
+class ConstructPage extends Component {
+	render() {
+		return (
+			<div>
+				<Navbars />
+				<Construction />
+				<Footer />
+			</div>
+		);
+	}
 }
 
 export default ConstructPage;

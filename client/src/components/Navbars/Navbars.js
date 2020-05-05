@@ -7,7 +7,7 @@ import "./Navbars.css";
 class Navbars extends Component {
 	state = {
 		src: Logo,
-		widthCheck: false
+		widthCheck: false,
 	};
 
 	componentDidMount() {

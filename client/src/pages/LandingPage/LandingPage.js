@@ -9,17 +9,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./LandingPage.css";
 
 class LandingPage extends Component {
-
 	render() {
 		return (
 			<div className="LandingPage">
 				<Navbars />
 				<Container fluid className="LandingPage">
-				  <Row className="dsc-body">
+					<Row className="dsc-body">
 						<Col lg={6} className="image">
 							<img src={Logo} className="dsc-logo" alt="dsc-nitsurat" />
 						</Col>
-				    <Col lg={6}>
+						<Col lg={6}>
 							<h1 className="context">
 								Here, you can <br />
 								<ReactTypingEffect
@@ -31,7 +30,7 @@ class LandingPage extends Component {
 								/>
 							</h1>
 						</Col>
-				  </Row>
+					</Row>
 				</Container>
 				<Footer />
 			</div>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbars from "../../components/Navbars/Navbars";
+import Footer from "../../components/Footer/Footer";
 import Logo from "../../img/dsc.jpg";
 import ReactTypingEffect from "react-typing-effect";
 
@@ -42,6 +43,7 @@ class LandingPage extends Component {
 						/>
 					</h1>
 				</div>
+				<Footer />
 			</div>
 		);
 	}

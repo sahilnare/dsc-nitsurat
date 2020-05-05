@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FaGithub, FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 import "./Footer.css";
 
-
 class Footer extends Component {
 	render() {
 		return (
@@ -13,12 +12,14 @@ class Footer extends Component {
 						<div className="col-xs-6 col-sm-6 col-md-6">
 							<h6>About</h6>
 							<p className="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+								irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+								pariatur. Excepteur sint.
 							</p>
 						</div>
-                        <div className="col-xs-3 col-sm-3 col-md-3"></div>
+						<div className="col-xs-3 col-sm-3 col-md-3"></div>
 						<div className="col-xs-3 col-sm-3 col-md-3">
 							<h6>Explore</h6>
 							<ul className="footer-links">
@@ -54,23 +55,31 @@ class Footer extends Component {
 						<div className="col-md-4 col-sm-6 col-xs-12">
 							<ul className="social-icons">
 								<li>
-									<a className="facebook" href="https://www.facebook.com/dscnitsurat/" target="_blank">
+									<a
+										className="facebook"
+										href="https://www.facebook.com/dscnitsurat/"
+										target="_blank"
+									>
 										<FaFacebookF />
 									</a>
 								</li>
 								<li>
 									<a className="twitter" href="https://twitter.com/dscnit?lang=en" target="_blank">
-                                        <FaTwitter />
+										<FaTwitter />
 									</a>
 								</li>
 								<li>
-									<a className="instagram" href="https://www.instagram.com/dsc_nitsurat/?hl=en" target="_blank">
-                                        <FaInstagram />
+									<a
+										className="instagram"
+										href="https://www.instagram.com/dsc_nitsurat/?hl=en"
+										target="_blank"
+									>
+										<FaInstagram />
 									</a>
 								</li>
-                                <li>
+								<li>
 									<a className="github" href="https://github.com/dsc-nit-surat/" target="_blank">
-                                        <FaGithub />
+										<FaGithub />
 									</a>
 								</li>
 							</ul>

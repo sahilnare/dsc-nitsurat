@@ -51,7 +51,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 60px;
 }
 
 
@@ -87,7 +86,10 @@
 
     .LandingPage .dsc-features .feature-description {
       padding: 4.5px 70px;
-      font-size: 55px;
+    }
+
+    .LandingPage .dsc-features .feature-description h3 {
+      font-size: 35px;
     }
 }
 
@@ -123,7 +125,10 @@
 
     .LandingPage .dsc-features .feature-description {
       padding: 4.5px 60px;
-      font-size: 50px;
+    }
+
+    .LandingPage .dsc-features .feature-description h3 {
+      font-size: 30px;
     }
 }
 
@@ -155,7 +160,10 @@
 
     .LandingPage .dsc-features .feature-description {
       padding: 4px 70px;
-      font-size: 45px;
+    }
+
+    .LandingPage .dsc-features .feature-description h3 {
+      font-size: 28px;
     }
 }
 
@@ -192,7 +200,11 @@
 
     .LandingPage .dsc-features .feature-description {
       padding: 5px 70px;
-      font-size: 40px;
+    }
+
+    .LandingPage .dsc-features .feature-description h3 {
+      margin: 10px 0;
+      font-size: 22px;
     }
 }
 
@@ -229,7 +241,11 @@
 
     .LandingPage .dsc-features .feature-description {
       padding: 3.5px 40px;
-      font-size: 30px;
+    }
+
+    .LandingPage .dsc-features .feature-description h3 {
+      margin: 10px 0;
+      font-size: 22px;
     }
 }
 
@@ -262,6 +278,10 @@
 
     .LandingPage .dsc-features .feature-description {
       padding: 2px 20px;
+    }
+
+    .LandingPage .dsc-features .feature-description h3 {
+      margin: 10px 0;
       font-size: 18px;
     }
 }

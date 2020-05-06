@@ -12,7 +12,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use(express.static("client/build"));
+// Serve the static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+// Handles any requests that don't match the ones above
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
 // Temporary connection between front-end and back-end
 app.get("/express_backend", (req, res) => {

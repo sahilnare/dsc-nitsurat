@@ -37,6 +37,13 @@
   margin: 0 auto;
 }
 
+.LandingPage .reasons {
+  font-size: 64px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #f8f9fa !important;
+}
+
 .LandingPage .dsc-features .feature-description {
   padding: 0 80px;
   display: flex;
@@ -74,8 +81,12 @@
 
     }
 
+    .LandingPage .reasons {
+      font-size: 55px;
+    }
+
     .LandingPage .dsc-features .feature-description {
-      padding: 0 70px;
+      padding: 4.5px 70px;
       font-size: 55px;
     }
 }
@@ -106,8 +117,12 @@
 
     }
 
+    .LandingPage .reasons {
+      font-size: 50px;
+    }
+
     .LandingPage .dsc-features .feature-description {
-      padding: 0 60px;
+      padding: 4.5px 60px;
       font-size: 50px;
     }
 }
@@ -134,8 +149,12 @@
 
     }
 
+    .LandingPage .reasons {
+      font-size: 45px;
+    }
+
     .LandingPage .dsc-features .feature-description {
-      padding: 0 70px;
+      padding: 4px 70px;
       font-size: 45px;
     }
 }
@@ -167,8 +186,12 @@
       padding: 0 100px;
     }
 
+    .LandingPage .reasons {
+      font-size: 40px;
+    }
+
     .LandingPage .dsc-features .feature-description {
-      padding: 0 70px;
+      padding: 5px 70px;
       font-size: 40px;
     }
 }
@@ -200,8 +223,12 @@
       padding: 0 60px;
     }
 
+    .LandingPage .reasons {
+      font-size: 30px;
+    }
+
     .LandingPage .dsc-features .feature-description {
-      padding: 0 40px;
+      padding: 3.5px 40px;
       font-size: 30px;
     }
 }
@@ -229,8 +256,12 @@
       padding: 0 20px;
     }
 
+    .LandingPage .reasons {
+      font-size: 18px;
+    }
+
     .LandingPage .dsc-features .feature-description {
-      padding: 0 20px;
+      padding: 2px 20px;
       font-size: 18px;
     }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Image, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Navbars from "../../components/Navbars/Navbars";
 import Footer from "../../components/Footer/Footer";
 import Developer from "../../img/developers.gif";
@@ -14,7 +14,7 @@ class AboutPage extends Component {
 				<Container fluid className="AboutPage">
 					<Row className="dsc-about">
 						<Col lg={6} className="image">
-							<Image src={Developer} width="800" height="500" />
+							<img src={Developer} className="developer-gif" alt="dsc-nitsurat" />
 						</Col>
 						<Col lg={6} className="context">
 							<h1>What we're about?</h1>

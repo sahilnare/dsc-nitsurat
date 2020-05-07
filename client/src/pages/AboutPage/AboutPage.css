@@ -1,132 +1,150 @@
-.AboutPage .context h1 {
+
+.AboutPage .dsc-about .image {
+  margin-top: 3rem;
+}
+
+.AboutPage .dsc-about .context h1 {
     margin-top: 6.5rem;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 40px;
 }
 
-.AboutPage .context h3 {
+.AboutPage .dsc-about .context {
+  padding: 0 40px;
+}
+
+.AboutPage .dsc-about .context h3 {
     margin-top: 2.5rem;
-    width: 80%;
+    font-size: 34px;
     font-family: Arial, Helvetica, sans-serif;
     color: #656;
 }
 
+.AboutPage .dsc-about .image .developer-gif {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+
 @media screen and (min-width: 1475px) and (max-width: 1675px) {
-    .AboutPage .image {
+    .AboutPage .dsc-about .image {
         margin-top: 4rem;
     }
 
-    .AboutPage .context h1 {
-        font-size: 40px; 
+    .AboutPage .dsc-about .image .developer-gif {
+      padding: 0 30px;
     }
 
-    .AboutPage .context h3 {
-        font-size: 34px;
-        width: 85%;
+    .AboutPage .dsc-about .context h1 {
+        font-size: 35px;
+    }
+
+    .AboutPage .dsc-about .context h3 {
+        font-size: 30px;
     }
 }
 
 @media screen and (min-width: 1275px) and (max-width: 1475px) {
-    .AboutPage .image {
-        margin-top: 4rem;
+    .AboutPage .dsc-about .image {
+        margin-top: 5rem;
     }
 
-    .AboutPage .context h1 {
-        font-size: 36px; 
+    .AboutPage .dsc-about .image .developer-gif {
+      padding: 0 20px;
     }
 
-    .AboutPage .context h3 {
+    .AboutPage .dsc-about .context h1 {
         font-size: 30px;
-        width: 85%;
+    }
+
+    .AboutPage .dsc-about .context h3 {
+        font-size: 25px;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1275px) {
-    .AboutPage .image {
-        margin-top: 4rem;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+    .AboutPage .dsc-about .image {
+        margin-top: 5rem;
     }
 
-    .AboutPage .context h1 {
-        font-size: 32px; 
+    .AboutPage .dsc-about .image .developer-gif {
+      padding: 0 10px;
     }
 
-    .AboutPage .context h3 {
-        font-size: 26px;
-        width: 85%;
+    .AboutPage .dsc-about .context h1 {
+        font-size: 30px;
+    }
+
+    .AboutPage .dsc-about .context h3 {
+        font-size: 25px;
     }
 }
 
 @media screen and (min-width: 650px) and (max-width: 992px) {
-    .AboutPage .image {
-        margin-top: 2.5rem;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+    .AboutPage .dsc-about .image {
+        margin-top: 2rem;
     }
 
-    .AboutPage .context h1 {
-        margin-top: 1.5rem;
-        text-align: center;
-        font-size: 32px; 
+    .AboutPage .dsc-about .image .developer-gif {
+      padding: 0 50px;
     }
 
-    .AboutPage .context h3 {
-        font-size: 24px;
-        text-align: center;
-        width: auto;
+    .AboutPage .dsc-about .context {
+      padding: 10px 60px;
+    }
+
+    .AboutPage .dsc-about .context h1 {
+        font-size: 30px;
+    }
+
+    .AboutPage .dsc-about .context h3 {
+        font-size: 25px;
     }
 }
 
 @media screen and (min-width: 420px) and (max-width: 650px) {
-    .AboutPage .image {
-        margin-top: 2.5rem;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .AboutPage .dsc-about .image {
+      margin-top: 2rem;
+  }
 
-    .AboutPage .image img {
-        height: 400px;
-    }
+  .AboutPage .dsc-about .image .developer-gif {
+    padding: 0 30px;
+  }
 
-    .AboutPage .context h1 {
-        margin-top: 1.5rem;
-        text-align: center;
-        font-size: 32px; 
-    }
+  .AboutPage .dsc-about .context {
+    padding: 10px 40px;
+  }
 
-    .AboutPage .context h3 {
-        font-size: 22px;
-        text-align: center;
-        width: auto;
-    }
+  .AboutPage .dsc-about .context h1 {
+      font-size: 26px;
+  }
+
+  .AboutPage .dsc-about .context h3 {
+      font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    .AboutPage .image {
-        margin-top: 2.5rem;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+    .AboutPage .dsc-about .image {
+        margin-top: 2rem;
     }
 
-    .AboutPage .image img {
-        height: 400px;
+    .AboutPage .dsc-about .image .developer-gif {
+      padding: 0 20px;
     }
 
-    .AboutPage .context h1 {
-        margin-top: 1.5rem;
-        text-align: center;
-        font-size: 28px; 
+    .AboutPage .dsc-about .context {
+      padding: 10px 30px;
     }
 
-    .AboutPage .context h3 {
-        font-size: 22px;
-        text-align: center;
-        width: auto;
+    .AboutPage .dsc-about .context h1 {
+        font-size: 23px;
+    }
+
+    .AboutPage .dsc-about .context h3 {
+        font-size: 18px;
     }
 }

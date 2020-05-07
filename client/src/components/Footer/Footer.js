@@ -39,13 +39,10 @@ class Footer extends Component {
 							<h6>Explore</h6>
 							<ul className="footer-links">
 								<li>
-									<a href="/about">About Us</a>
+									<a href="/about">About</a>
 								</li>
 								<li>
-									<a href="/contact">Contact Us</a>
-								</li>
-								<li>
-									<a href="/blog">Blog</a>
+									<a href="/events">Events</a>
 								</li>
 								<li>
 									<a href="/team">Team</a>
@@ -69,11 +66,6 @@ class Footer extends Component {
 
 						<div className="col-md-4 col-sm-6 col-xs-12">
 							<ul className="social-icons">
-								<li>
-									<a className="github" href="https://github.com/dsc-nit-surat/" target="_blank">
-										<FaGithub />
-									</a>
-								</li>
 								<li>
 									<a className="twitter" href="https://twitter.com/dscnit?lang=en" target="_blank">
 										<FaTwitter />

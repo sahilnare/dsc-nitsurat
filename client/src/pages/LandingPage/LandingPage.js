@@ -6,8 +6,10 @@ import Logo from "../../img/dsc.jpg";
 import Connect from "../../img/features/connect.jpg";
 import Learn from "../../img/features/learn.jpg";
 import Grow from "../../img/features/grow.jpg";
+import Contact from "../../img/contact.gif";
 import ReactTypingEffect from "react-typing-effect";
 import { Container, Row, Col, Alert } from "react-bootstrap";
+import { FaMeetup, FaMailBulk, FaLinkedin, FaGithub } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -150,6 +152,49 @@ class LandingPage extends Component {
 							</h3>
 						</Col>
 					</Row>
+					<div id="dsc-contact">
+						<Alert
+							variant="light"
+							className="reasons contact"
+							data-aos="fade-up"
+							data-aos-offset={this.state.aosOffset}
+						>
+							Where Can You Find Us?
+						</Alert>
+						<Row className="dsc-features">
+							<Col
+								className="feature-image animate"
+								lg={4}
+								data-aos="fade-right"
+								data-aos-offset={this.state.aosOffset}
+							>
+								<img src={Contact} className="feature-design" alt="dsc-contact" />
+							</Col>
+							<Col lg={1} />
+							<Col data-aos="fade-left" data-aos-offset={this.state.aosOffset} className="social">
+								<a
+									href="https://www.linkedin.com/company/dsc-nit-surat-powered-by-google-developers/"
+									target="_blank"
+									className="linkedin"
+								>
+									<FaLinkedin className="link" />
+								</a>
+								<a
+									href="https://www.meetup.com/Developer-Student-Club-NIT-Surat/"
+									target="_blank"
+									className="meetup"
+								>
+									<FaMeetup className="link" />
+								</a>
+								<a href="mailto:dscnitsurat@gmail.com" className="mail">
+									<FaMailBulk className="link" />
+								</a>
+								<a href="https://github.com/dsc-nit-surat" target="_blank" className="github">
+									<FaGithub className="link" />
+								</a>
+							</Col>
+						</Row>
+					</div>
 				</Container>
 				<Footer />
 			</div>

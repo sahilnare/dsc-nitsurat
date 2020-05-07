@@ -33,18 +33,21 @@ class Navbars extends Component {
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
-						<Nav className="mr-auto">
+						<Nav className="ml-auto">
 							<Nav.Link href="/" className="nav-item">
 								<h5>Home</h5>
 							</Nav.Link>
 							<Nav.Link href="/about" className="nav-item">
 								<h5>About</h5>
 							</Nav.Link>
-							<Nav.Link href="/blog" className="nav-item">
-								<h5>Blog</h5>
+							<Nav.Link href="/events" className="nav-item">
+								<h5>Events</h5>
 							</Nav.Link>
 							<Nav.Link href="/team" className="nav-item">
 								<h5>Team</h5>
+							</Nav.Link>
+							<Nav.Link href="/#dsc-contact" className="nav-item contact">
+								<h5>Contact Us</h5>
 							</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>

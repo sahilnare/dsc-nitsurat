@@ -38,11 +38,39 @@
 }
 
 .LandingPage .reasons {
-  font-size: 64px;
+  font-size: 60px;
   text-align: center;
   margin-top: 10px;
   background-color: #f8f9fa !important;
 }
+
+.LandingPage .contact {
+  margin-top: 40px;
+}
+
+.LandingPage .meetup { 
+  color: #ed1c40;
+}
+
+.LandingPage .linkedin { 
+  color: #1d78eb;
+}
+
+.LandingPage .mail { 
+  color: #f8db00;
+}
+
+.LandingPage .github { 
+  color: #007d00;
+}
+
+.LandingPage .link {
+  margin-top: 6rem;
+  height: 200px;
+  margin-right: 5rem;
+  width: 150px;
+}
+
 
 .LandingPage .dsc-features .feature-description {
   padding: 0 80px;
@@ -51,8 +79,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #656;
 }
-
 
 @media screen and (min-width: 1475px) and (max-width: 1675px) {
     .LandingPage .dsc-body .image {
@@ -81,7 +109,7 @@
     }
 
     .LandingPage .reasons {
-      font-size: 55px;
+      font-size: 65px;
     }
 
     .LandingPage .dsc-features .feature-description {
@@ -90,6 +118,11 @@
 
     .LandingPage .dsc-features .feature-description h3 {
       font-size: 35px;
+    }
+
+    .LandingPage .link{
+      margin-right: 3rem;
+      width: 135px;
     }
 }
 
@@ -120,7 +153,7 @@
     }
 
     .LandingPage .reasons {
-      font-size: 50px;
+      font-size: 62px;
     }
 
     .LandingPage .dsc-features .feature-description {
@@ -129,6 +162,15 @@
 
     .LandingPage .dsc-features .feature-description h3 {
       font-size: 30px;
+    }
+
+    .LandingPage .dsc-features .feature-image .feature-design {
+      width: 120%;
+    }
+
+    .LandingPage .link{
+      margin-right: 2.75rem;
+      width: 120px;
     }
 }
 
@@ -155,7 +197,7 @@
     }
 
     .LandingPage .reasons {
-      font-size: 45px;
+      font-size: 55px;
     }
 
     .LandingPage .dsc-features .feature-description {
@@ -165,9 +207,31 @@
     .LandingPage .dsc-features .feature-description h3 {
       font-size: 28px;
     }
+
+    .LandingPage .dsc-features .feature-image .feature-design {
+      width: 120%;
+    }
+
+    .LandingPage .link{
+      margin-top: 3rem;
+      margin-right: 2.25rem;
+      width: 100px;
+    }    
 }
 
-@media screen and (min-width: 650px) and (max-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1060px) {
+    .LandingPage .dsc-features .feature-image .feature-design {
+      width: 120%;
+    }
+
+    .LandingPage .link{
+      margin-top: 0;
+      margin-right: 2rem;
+      width: 90px;
+    }  
+}
+
+@media screen and (min-width: 650px) and (max-width: 991px) {
     .LandingPage .dsc-body .image {
       margin-top: 1rem;
     }
@@ -195,7 +259,7 @@
     }
 
     .LandingPage .reasons {
-      font-size: 40px;
+      font-size: 56px;
     }
 
     .LandingPage .dsc-features .feature-description {
@@ -205,6 +269,16 @@
     .LandingPage .dsc-features .feature-description h3 {
       margin: 10px 0;
       font-size: 22px;
+    }
+
+    .LandingPage .dsc-features .animate {
+      display: none;
+    }
+
+    .LandingPage .link{
+      margin-top: 0;
+      margin-right: 2.5rem;
+      width: 90px;
     }
 }
 
@@ -236,7 +310,7 @@
     }
 
     .LandingPage .reasons {
-      font-size: 30px;
+      font-size: 36px;
     }
 
     .LandingPage .dsc-features .feature-description {
@@ -246,6 +320,16 @@
     .LandingPage .dsc-features .feature-description h3 {
       margin: 10px 0;
       font-size: 22px;
+    }
+
+    .LandingPage .dsc-features .animate {
+      display: none;
+    }
+
+    .LandingPage .link{
+      margin-top: 0;
+      margin-right: 2.5rem;
+      width: 90px;
     }
 }
 
@@ -273,7 +357,7 @@
     }
 
     .LandingPage .reasons {
-      font-size: 18px;
+      font-size: 30px;
     }
 
     .LandingPage .dsc-features .feature-description {
@@ -283,5 +367,15 @@
     .LandingPage .dsc-features .feature-description h3 {
       margin: 10px 0;
       font-size: 18px;
+    }
+
+    .LandingPage .dsc-features .animate {
+      display: none;
+    }
+
+    .LandingPage .link{
+      margin-top: 0;
+      margin-right: 2.5rem;
+      width: 75px;
     }
 }

@@ -82,7 +82,8 @@
 }
 
 .copyright-text {
-  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .explore {
@@ -163,10 +164,6 @@
 
 .social-icons a.twitter:hover {
   background-color:#00aced;
-}
-
-.social-icons a.github:hover {
-  background-color:#bf37c9;
 }
 
 .social-icons a.instagram:hover {

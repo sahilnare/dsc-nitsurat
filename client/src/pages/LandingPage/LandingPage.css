@@ -1,9 +1,5 @@
-.LandingPage .dsc-body {
-
-}
-
 .LandingPage .dsc-body .image {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }
 
 .LandingPage .dsc-body .context {
@@ -18,7 +14,8 @@
 }
 
 .LandingPage .dsc-body .image .dsc-logo {
-  width: 100%;
+  width: 80%;
+  height: 100%;
   margin: 0 auto;
   padding: 0 90px;
 }
@@ -26,10 +23,6 @@
 .LandingPage .dsc-features {
     padding: 0 40px;
     margin-top: 30px;
-}
-
-.LandingPage .dsc-features .feature-image {
-
 }
 
 .LandingPage .dsc-features .feature-image .feature-design {
@@ -40,12 +33,12 @@
 .LandingPage .reasons {
   font-size: 60px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 40px;
   background-color: #f8f9fa !important;
 }
 
 .LandingPage .contact {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .LandingPage .meetup { 
@@ -84,10 +77,12 @@
 
 @media screen and (min-width: 1475px) and (max-width: 1675px) {
     .LandingPage .dsc-body .image {
-
+      margin-top: 0;
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
+      height: 110%;
+      width: 95%;
       padding: 0 75px;
     }
 
@@ -102,10 +97,6 @@
 
     .LandingPage .dsc-features {
         padding: 0 40px;
-    }
-
-    .LandingPage .dsc-features .feature-image {
-
     }
 
     .LandingPage .reasons {
@@ -128,10 +119,12 @@
 
 @media screen and (min-width: 1275px) and (max-width: 1475px) {
     .LandingPage .dsc-body .image {
-      margin-top: 2rem;
+      margin-top: 0;
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
+      height: 110%; 
+      width: 95%;
       padding: 0 60px;
     }
 
@@ -146,10 +139,6 @@
 
     .LandingPage .dsc-features {
         padding: 0 40px;
-    }
-
-    .LandingPage .dsc-features .feature-image {
-
     }
 
     .LandingPage .reasons {
@@ -175,13 +164,19 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1275px) {
+    .LandingPage .dsc-body .image {
+      margin-top: 0;
+    }
+
     .LandingPage .dsc-body .image .dsc-logo {
+      width: 94%;
+      height: 110%;
       padding: 0 50px;
     }
 
     .LandingPage .dsc-body .context {
         font-size: 75px;
-        margin-top: 9rem;
+        margin-top: 7.25rem;
     }
 
     .LandingPage .dsc-body .highlight {
@@ -190,10 +185,6 @@
 
     .LandingPage .dsc-features {
         padding: 0 40px;
-    }
-
-    .LandingPage .dsc-features .feature-image {
-
     }
 
     .LandingPage .reasons {
@@ -231,13 +222,21 @@
     }  
 }
 
+@media screen and (max-width: 991px) {
+  .LandingPage .social {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 650px) and (max-width: 991px) {
     .LandingPage .dsc-body .image {
       margin-top: 1rem;
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
-      padding: 0 70px;
+      width: 100%;
+      height: auto;
+      padding: 0 80px;
     }
 
     .LandingPage .dsc-body .context {
@@ -277,17 +276,28 @@
 
     .LandingPage .link{
       margin-top: 0;
-      margin-right: 2.5rem;
-      width: 90px;
+      width: 85px;
     }
+
+    .LandingPage .Github {
+      margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 710px) {
+  .LandingPage .link{
+    width: 75px;
+  }
 }
 
 @media screen and (min-width: 420px) and (max-width: 650px) {
     .LandingPage .dsc-body .image {
-      margin-top: 0.5rem;
+      margin-top: 1rem;
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
+      width: 100%;
+      height: auto;
       padding: 0 40px;
     }
 
@@ -328,13 +338,38 @@
 
     .LandingPage .link{
       margin-top: 0;
-      margin-right: 2.5rem;
-      width: 90px;
+      margin-right: 2.25rem;
+      width: 70px;
+    }
+
+    .LandingPage .Github {
+      margin-right: 0;
     }
 }
 
+@media screen and (min-width: 478px) and (max-width: 498px) {
+  .LandingPage .link {
+    width: 65px;
+  }
+}
+
+@media screen and (min-width: 435px) and (max-width: 477px) {
+  .LandingPage .link {
+    margin-right: 1.35rem;
+    width: 65px;
+  }
+
+  .LandingPage .Github {
+    margin-right: 0;
+  }
+
+}
+
+
 @media screen and (max-width: 420px) {
     .LandingPage .dsc-body .image .dsc-logo {
+      width: 100%;
+      margin: 0 auto;
       padding: 0 10px;
     }
 

@@ -161,7 +161,7 @@ class LandingPage extends Component {
 						>
 							Where Can You Find Us?
 						</Alert>
-						<Row className="dsc-features">
+						<Row className="dsc-features social">
 							<Col
 								className="feature-image animate"
 								lg={4}
@@ -171,26 +171,33 @@ class LandingPage extends Component {
 								<img src={Contact} className="feature-design" alt="dsc-contact" />
 							</Col>
 							<Col lg={1} />
-							<Col data-aos="fade-left" data-aos-offset={this.state.aosOffset} className="social">
+							<Col data-aos="fade-left" data-aos-offset={this.state.aosOffset}>
 								<a
 									href="https://www.linkedin.com/company/dsc-nit-surat-powered-by-google-developers/"
+									rel="noopener noreferrer"
 									target="_blank"
 									className="linkedin"
 								>
-									<FaLinkedin className="link" />
+									<FaLinkedin className="link LinkedIn" />
 								</a>
 								<a
 									href="https://www.meetup.com/Developer-Student-Club-NIT-Surat/"
+									rel="noopener noreferrer"
 									target="_blank"
 									className="meetup"
 								>
-									<FaMeetup className="link" />
+									<FaMeetup className="link Meetup" />
 								</a>
 								<a href="mailto:dscnitsurat@gmail.com" className="mail">
-									<FaMailBulk className="link" />
+									<FaMailBulk className="link MailBulk" />
 								</a>
-								<a href="https://github.com/dsc-nit-surat" target="_blank" className="github">
-									<FaGithub className="link" />
+								<a
+									href="https://github.com/dsc-nit-surat"
+									rel="noopener noreferrer"
+									target="_blank"
+									className="github"
+								>
+									<FaGithub className="link Github" />
 								</a>
 							</Col>
 						</Row>

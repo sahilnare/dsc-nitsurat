@@ -41,19 +41,19 @@
   margin-top: 80px;
 }
 
-.LandingPage .meetup { 
+.LandingPage .meetup {
   color: #ed1c40;
 }
 
-.LandingPage .linkedin { 
+.LandingPage .linkedin {
   color: #1d78eb;
 }
 
-.LandingPage .mail { 
+.LandingPage .mail {
   color: #f8db00;
 }
 
-.LandingPage .github { 
+.LandingPage .github {
   color: #007d00;
 }
 
@@ -123,7 +123,7 @@
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
-      height: 110%; 
+      height: 110%;
       width: 95%;
       padding: 0 60px;
     }
@@ -207,7 +207,7 @@
       margin-top: 3rem;
       margin-right: 2.25rem;
       width: 100px;
-    }    
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1060px) {
@@ -219,7 +219,7 @@
       margin-top: 0;
       margin-right: 2rem;
       width: 90px;
-    }  
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -384,7 +384,7 @@
     }
 
     .LandingPage .dsc-features {
-        padding: 0 30px;
+        padding: 0 10px;
     }
 
     .LandingPage .dsc-features .feature-image {
@@ -410,7 +410,10 @@
 
     .LandingPage .link{
       margin-top: 0;
-      margin-right: 2.5rem;
-      width: 75px;
+      margin-right: 1.2rem;
+      margin-left: 1.2rem;
+      width: 25%;
     }
+
+
 }

@@ -22,7 +22,7 @@ class LandingPage extends Component {
 			aosOffset: "400",
 			featArr: true,
 			dataAosLeft: "fade-left",
-			dataAosRight: "fade-right"
+			dataAosRight: "fade-right",
 		};
 	}
 
@@ -34,9 +34,19 @@ class LandingPage extends Component {
 
 	resize() {
 		if (window.innerWidth <= 991) {
-			this.setState({ aosOffset: "200", featArr: false, dataAosLeft: "fade-up", dataAosRight: "fade-up" });
+			this.setState({
+				aosOffset: "200",
+				featArr: false,
+				dataAosLeft: "fade-up",
+				dataAosRight: "fade-up",
+			});
 		} else {
-			this.setState({ aosOffset: "400", featArr: true, dataAosLeft: "fade-left", dataAosRight: "fade-right" });
+			this.setState({
+				aosOffset: "400",
+				featArr: true,
+				dataAosLeft: "fade-left",
+				dataAosRight: "fade-right",
+			});
 		}
 	}
 

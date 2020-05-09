@@ -47,52 +47,52 @@ class TeamPage extends Component {
 							<div className="item">
 								<img src={MaleAvatar} alt="male-avatar" className="avatar" />
 								<span className="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={FemaleAvatar2} alt="female-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={MaleAvatar} alt="male-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={FemaleAvatar} alt="female-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={MaleAvatar} alt="male-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={MaleAvatar2} alt="male-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={FemaleAvatar2} alt="female-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={MaleAvatar2} alt="male-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={MaleAvatar2} alt="male-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={FemaleAvatar} alt="female-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 						</TimelineItem>
 						<TimelineItem
@@ -104,37 +104,37 @@ class TeamPage extends Component {
 							<div className="item">
 								<img src={MaleAvatar} alt="male-avatar" className="avatar" />
 								<span className="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={FemaleAvatar2} alt="female-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={MaleAvatar} alt="male-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={FemaleAvatar} alt="female-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={MaleAvatar} alt="male-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
 								<img src={MaleAvatar2} alt="male-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
-                            <div className="item">
+							<div className="item">
 								<img src={FemaleAvatar2} alt="female-avatar" className="avatar" />
 								<span class="caption">Name-DSC</span>
-                                <span class="caption">Developer</span>
+								<span class="caption">Developer</span>
 							</div>
 						</TimelineItem>
 					</Timeline>

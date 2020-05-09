@@ -21,6 +21,8 @@ class LandingPage extends Component {
 		this.state = {
 			aosOffset: "400",
 			featArr: true,
+			dataAosLeft: "fade-left",
+			dataAosRight: "fade-right"
 		};
 	}
 
@@ -32,9 +34,9 @@ class LandingPage extends Component {
 
 	resize() {
 		if (window.innerWidth <= 991) {
-			this.setState({ aosOffset: "200", featArr: false });
+			this.setState({ aosOffset: "200", featArr: false, dataAosLeft: "fade-up", dataAosRight: "fade-up" });
 		} else {
-			this.setState({ aosOffset: "400", featArr: true });
+			this.setState({ aosOffset: "400", featArr: true, dataAosLeft: "fade-left", dataAosRight: "fade-right" });
 		}
 	}
 
@@ -72,14 +74,14 @@ class LandingPage extends Component {
 						<Col
 							className="feature-image"
 							lg={4}
-							data-aos="fade-right"
+							data-aos={this.state.dataAosRight}
 							data-aos-offset={this.state.aosOffset}
 						>
 							<img src={Connect} className="feature-design" alt="dsc-nitsurat" />
 						</Col>
 						<Col
 							className="feature-description"
-							data-aos="fade-left"
+							data-aos={this.state.dataAosLeft}
 							data-aos-offset={this.state.aosOffset}
 						>
 							<h3>
@@ -92,7 +94,7 @@ class LandingPage extends Component {
 						<Row className="dsc-features">
 							<Col
 								className="feature-description"
-								data-aos="fade-right"
+								data-aos={this.state.dataAosRight}
 								data-aos-offset={this.state.aosOffset}
 							>
 								<h3>
@@ -103,7 +105,7 @@ class LandingPage extends Component {
 							<Col
 								className="feature-image"
 								lg={4}
-								data-aos="fade-left"
+								data-aos={this.state.dataAosLeft}
 								data-aos-offset={this.state.aosOffset}
 							>
 								<img src={Learn} className="feature-design" alt="dsc-nitsurat" />
@@ -114,14 +116,14 @@ class LandingPage extends Component {
 							<Col
 								className="feature-image"
 								lg={4}
-								data-aos="fade-left"
+								data-aos={this.state.dataAosLeft}
 								data-aos-offset={this.state.aosOffset}
 							>
 								<img src={Learn} className="feature-design" alt="dsc-nitsurat" />
 							</Col>
 							<Col
 								className="feature-description"
-								data-aos="fade-right"
+								data-aos={this.state.dataAosRight}
 								data-aos-offset={this.state.aosOffset}
 							>
 								<h3>
@@ -135,14 +137,14 @@ class LandingPage extends Component {
 						<Col
 							className="feature-image"
 							lg={4}
-							data-aos="fade-right"
+							data-aos={this.state.dataAosRight}
 							data-aos-offset={this.state.aosOffset}
 						>
 							<img src={Grow} className="feature-design" alt="dsc-nitsurat" />
 						</Col>
 						<Col
 							className="feature-description"
-							data-aos="fade-left"
+							data-aos={this.state.dataAosLeft}
 							data-aos-offset={this.state.aosOffset}
 						>
 							<h3>
@@ -165,13 +167,13 @@ class LandingPage extends Component {
 							<Col
 								className="feature-image animate"
 								lg={4}
-								data-aos="fade-right"
+								data-aos={this.state.dataAosRight}
 								data-aos-offset={this.state.aosOffset}
 							>
 								<img src={Contact} className="feature-design" alt="dsc-contact" />
 							</Col>
 							<Col lg={1} />
-							<Col data-aos="fade-left" data-aos-offset={this.state.aosOffset}>
+							<Col data-aos={this.state.dataAosLeft} data-aos-offset={this.state.aosOffset}>
 								<a
 									href="https://www.linkedin.com/company/dsc-nit-surat-powered-by-google-developers/"
 									rel="noopener noreferrer"

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Navbars from "../../components/Navbars/Navbars";
 import Footer from "../../components/Footer/Footer";
-import Developer from "../../img/developers.gif";
+import Developer from "../../img/gif/developers.gif";
 import "./AboutPage.css";
 
 class AboutPage extends Component {

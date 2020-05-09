@@ -6,7 +6,7 @@ import Logo from "../../img/dsc.jpg";
 import Connect from "../../img/features/connect.jpg";
 import Learn from "../../img/features/learn.jpg";
 import Grow from "../../img/features/grow.jpg";
-import Contact from "../../img/contact.gif";
+import Contact from "../../img/gif/contact.gif";
 import ReactTypingEffect from "react-typing-effect";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { FaMeetup, FaMailBulk, FaLinkedin, FaGithub } from "react-icons/fa";

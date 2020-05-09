@@ -67,7 +67,7 @@ class Footer extends Component {
 						<div className="col-md-4 col-sm-6 col-xs-12">
 							<ul className="social-icons">
 								<li>
-									<a className="twitter" href="https://twitter.com/dscnit?lang=en" target="_blank">
+									<a className="twitter" href="https://twitter.com/dscnit?lang=en" target="_blank" rel="noopener noreferrer">
 										<FaTwitter />
 									</a>
 								</li>
@@ -76,6 +76,7 @@ class Footer extends Component {
 										className="instagram"
 										href="https://www.instagram.com/dsc_nitsurat/?hl=en"
 										target="_blank"
+										rel="noopener noreferrer"
 									>
 										<FaInstagram />
 									</a>
@@ -85,6 +86,7 @@ class Footer extends Component {
 										className="facebook"
 										href="https://www.facebook.com/dscnitsurat/"
 										target="_blank"
+										rel="noopener noreferrer"
 									>
 										<FaFacebookF />
 									</a>

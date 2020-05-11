@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaGithub, FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
-import SocialLogo from "../../img/social-media.png";
+import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
+import SocialLogo from "../../img/social-media.webp";
 import "./Footer.css";
 
 class Footer extends Component {

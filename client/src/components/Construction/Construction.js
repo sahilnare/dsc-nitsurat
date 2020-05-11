@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Construct from "../../img/construct.png";
+import Construct from "../../img/construct.webp";
 import ReactSpinner from "react-bootstrap-spinner";
 import "./Construction.css";
 

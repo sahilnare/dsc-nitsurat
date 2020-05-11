@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../img/logo.jpg";
+import Logo from "../../img/logo.webp";
 import "./Navbars.css";
 
 class Navbars extends Component {

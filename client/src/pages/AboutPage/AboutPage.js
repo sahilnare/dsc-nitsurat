@@ -15,6 +15,9 @@ class AboutPage extends Component {
 					<Row className="dsc-about">
 						<Col lg={6} className="image">
 							<img src={Developer} className="developer-gif" alt="dsc-nitsurat" />
+							{/*<video autoPlay loop muted playsinline className="developer-gif" alt="dsc-nitsurat">
+								<source type="video/webm" src={Developer} />
+							</video>*/}
 						</Col>
 						<Col lg={6} className="context">
 							<h1>What we're about?</h1>

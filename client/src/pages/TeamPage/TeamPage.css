@@ -1,8 +1,4 @@
 .TeamPage .TeamImage {
-    background: url("../../img/gif/team.gif");
-    background-repeat: no-repeat;
-    background-attachment: relative;
-    background-position: top right;
     margin-top: 3rem;
 }
 
@@ -16,11 +12,14 @@
 
 .TeamImage .main-text {
     margin-left: 2rem;
-    margin-top: 10rem;
-    margin-bottom: 25rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .TeamImage .title {
+    margin-top: 4rem;
     margin-bottom: 0.75rem;
     font-size: 45px;
 }
@@ -124,31 +123,46 @@
 
 @media screen and (min-width: 992px) and (max-width: 1275px) {
   .TeamImage .main-text {
-      margin-right: 3rem;
+      margin-right: 0;
       margin-left: 0;
-      margin-top: 10rem;
-      margin-bottom: 25rem;
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+  }
+
+  .TeamImage .title {
+    font-size: 40px
+  }
+
+  .TeamImage .sub-title {
+    font-size: 28px;
   }
 
 }
 
 @media screen and (min-width: 650px) and (max-width: 992px) {
   .TeamPage .TeamImage {
-      background-position: center;
       margin-top: 3rem;
       padding: 0 40px;
   }
 
   .TeamImage .main-text {
-      margin-right: 3rem;
+      margin-right: 0;
       margin-left: 0;
-      margin-top: 2rem;
-      margin-bottom: 30rem;
-      padding: 32px 32px 192px 32px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      padding: 25px 32px 10px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .TeamImage .webm {
+    margin: 0 auto;
   }
 
   .TeamImage .title {
-    font-size: 35px
+    font-size: 35px;
+    margin-top: 0;
   }
   .TeamImage .sub-title {
     font-size: 25px;
@@ -157,75 +171,121 @@
 
 @media screen and (min-width: 420px) and (max-width: 650px) {
   .TeamPage .TeamImage {
-      background-position: center;
       margin-top: 1rem;
       padding: 0 30px;
   }
 
   .TeamImage .main-text {
-      margin-right: 0rem;
+      margin-right: 0;
       margin-left: 0;
-      margin-top: 2rem;
-      margin-bottom: 25rem;
-      padding: 32px 20px 192px 20px;
+      margin-top: 1rem;
+      margin-bottom: 10rem;
+      padding: 25px 10px 10px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .TeamImage .webm {
+    margin: 0 auto;
+    width: 70%;
   }
 
   .TeamImage .title {
-    font-size: 35px
+    font-size: 35px;
+    margin-top: 0;
   }
 
   .TeamImage .sub-title {
     font-size: 25px;
+  }
+
+  .TeamImage .team-background {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 420px) {
   .TeamPage .TeamImage {
-      background-position: center;
       margin-top: 0.3rem;
-      padding: 0 30px;
+      padding: 0 10px;
   }
 
   .TeamImage .main-text {
-      margin-right: 0rem;
+      margin-right: 0;
       margin-left: 0;
-      margin-top: 2rem;
-      margin-bottom: 20rem;
-      padding: 32px 20px 192px 20px;
+      margin-top: 1rem;
+      margin-bottom: 10rem;
+      padding: 25px 10px 10px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .TeamImage .webm {
+    margin: 0 auto;
+    width: 80%;
   }
 
   .TeamImage .title {
-    font-size: 35px
+    font-size: 35px;
+    margin-top: 0;
+    padding: 0 10px;
   }
 
   .TeamImage .sub-title {
-    font-size: 25px;
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .TeamImage .team-background {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 375px) {
-    .TeamPage .TeamImage {
-        background-position: center;
-        background-size: 250px;
-        margin-top: 0.3rem;
-        padding: 0 30px;
-    }
-  
-    .TeamImage .main-text {
-        margin-right: 0rem;
-        margin-left: 0;
-        margin-top: 2rem;
-        margin-bottom: 20rem;
-        padding: 32px 20px 192px 20px;
-    }
-  
-    .TeamImage .title {
-      font-size: 35px
-    }
-  
-    .TeamImage .sub-title {
-      font-size: 25px;
-    }
+  .TeamPage .TeamImage {
+      margin-top: 0.3rem;
+      padding: 0 3px;
+  }
+
+  .TeamImage .main-text {
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 1rem;
+      margin-bottom: 10rem;
+      padding: 25px 3px 10px 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .TeamImage .webm {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .TeamImage .title {
+    font-size: 35px;
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  .TeamImage .sub-title {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+
+  .TeamImage .team-background {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .round {
+      bottom: 8rem;
+  }
 
     .item .avatar {
         width: 100px;

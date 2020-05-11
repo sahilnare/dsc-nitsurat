@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbars from "../../components/Navbars/Navbars";
 import Footer from "../../components/Footer/Footer";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
+import TeamBackground from "../../img/gif/team.webm";
 
 import AJ from "../../img/avatar/2k20-2k21/aj.webp";
 import NKG from "../../img/avatar/2k20-2k21/nkg.webp";
@@ -33,15 +34,22 @@ class TeamPage extends Component {
 			<div className="TeamPage">
 				<Navbars />
 				<div className="description">
-					<Container className="TeamImage">
-						<Row>
-							<Col lg={12}>
+					<Container className="TeamImage" fluid>
+						<Row style={{width: '100%', margin: '0 auto'}}>
+							<Col style={{width: '100%'}}>
 								<Jumbotron className="main-text">
-									<h1 className="title"> The Team </h1>
-									<h3 className="sub-title">
-										{" "}
-										Presenting you the board of developers & tech enthusiasts.
-									</h3>
+									<div className="text">
+										<h1 className="title"> The Team </h1>
+										<h3 className="sub-title">
+											{" "}
+											Presenting you the board of developers & tech enthusiasts.
+										</h3>
+									</div>
+									<div className="webm">
+										<video autoPlay loop muted playsinline className="team-background" alt="team-background">
+											<source type="video/webm" src={TeamBackground} />
+										</video>
+									</div>
 								</Jumbotron>
 							</Col>
 						</Row>

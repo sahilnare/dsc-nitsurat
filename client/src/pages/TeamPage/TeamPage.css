@@ -29,17 +29,18 @@
   font-size: 30px;
 }
 
+
 .round {
-    position: absolute;
+    position: relative;
     border: 1px solid #666;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     left: 50%;
     margin-left: -30px;
-    margin-bottom: 2.5rem;
-	  bottom: 40px;
+    bottom: 5rem;
 }
+
 .arrows {
 	width: 50px;
 	height: 72px;
@@ -84,6 +85,7 @@
     text-align: center;
     margin-bottom: 2rem;
 }
+
 .item .avatar {
     vertical-align: middle;
     width: 150px;
@@ -101,24 +103,20 @@
 
 
 @media screen and (min-width: 1475px) and (max-width: 1675px) {
-  .TeamImage .main-text {
-
-  }
   .TeamImage .title {
     font-size: 45px;
   }
+
   .TeamImage .sub-title {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 1275px) and (max-width: 1475px) {
-  .TeamImage .main-text {
-
-  }
   .TeamImage .title {
     font-size: 40px
   }
+
   .TeamImage .sub-title {
     font-size: 28px;
   }
@@ -140,6 +138,7 @@
       margin-top: 3rem;
       padding: 0 40px;
   }
+
   .TeamImage .main-text {
       margin-right: 3rem;
       margin-left: 0;
@@ -162,6 +161,7 @@
       margin-top: 1rem;
       padding: 0 30px;
   }
+
   .TeamImage .main-text {
       margin-right: 0rem;
       margin-left: 0;
@@ -173,17 +173,19 @@
   .TeamImage .title {
     font-size: 35px
   }
+
   .TeamImage .sub-title {
     font-size: 25px;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 375px) and (max-width: 420px) {
   .TeamPage .TeamImage {
       background-position: center;
       margin-top: 0.3rem;
       padding: 0 30px;
   }
+
   .TeamImage .main-text {
       margin-right: 0rem;
       margin-left: 0;
@@ -195,7 +197,75 @@
   .TeamImage .title {
     font-size: 35px
   }
+
   .TeamImage .sub-title {
     font-size: 25px;
   }
+}
+
+@media screen and (max-width: 375px) {
+    .TeamPage .TeamImage {
+        background-position: center;
+        background-size: 250px;
+        margin-top: 0.3rem;
+        padding: 0 30px;
+    }
+  
+    .TeamImage .main-text {
+        margin-right: 0rem;
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 20rem;
+        padding: 32px 20px 192px 20px;
+    }
+  
+    .TeamImage .title {
+      font-size: 35px
+    }
+  
+    .TeamImage .sub-title {
+      font-size: 25px;
+    }
+
+    .item .avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* For the scroll down button */
+@media screen and (min-height: 796px) and (max-height: 845px) {
+    .round {
+        bottom: 8rem;
+    }
+}
+
+@media screen and (min-height: 764px) and (max-height: 796px) {
+    .round {
+        bottom: 10rem;
+    }
+}
+
+@media screen and (min-height: 685px) and (max-height: 763px) {
+    .round {
+        bottom: 15rem;
+    }
+}
+
+@media screen and (min-height: 635px) and (max-height: 684px) {
+    .round {
+        bottom: 18rem;
+    }
+}
+
+@media screen and (min-height: 610px) and (max-height: 634px) {
+    .round {
+        bottom: 20rem;
+    }
+}
+
+@media screen and (max-height: 609px) {
+    .round {
+        bottom: 25rem;
+    }
 }

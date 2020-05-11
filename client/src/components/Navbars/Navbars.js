@@ -47,9 +47,6 @@ class Navbars extends Component {
 							<Link to="/team" className="nav-item nav-link">
 								<h5>Team</h5>
 							</Link>
-							<Link to="/#dsc-contact" className="nav-item nav-link contact">
-								<h5>Contact Us</h5>
-							</Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

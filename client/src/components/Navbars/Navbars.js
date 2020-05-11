@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Logo from "../../img/logo.jpg";
 import "./Navbars.css";
 
@@ -34,21 +35,21 @@ class Navbars extends Component {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="ml-auto">
-							<Nav.Link href="/" className="nav-item">
+							<Link to="/" className="nav-item nav-link">
 								<h5>Home</h5>
-							</Nav.Link>
-							<Nav.Link href="/about" className="nav-item">
+							</Link>
+							<Link to="/about" className="nav-item nav-link">
 								<h5>About</h5>
-							</Nav.Link>
-							<Nav.Link href="/events" className="nav-item">
+							</Link>
+							<Link to="/events" className="nav-item nav-link">
 								<h5>Events</h5>
-							</Nav.Link>
-							<Nav.Link href="/team" className="nav-item">
+							</Link>
+							<Link to="/team" className="nav-item nav-link">
 								<h5>Team</h5>
-							</Nav.Link>
-							<Nav.Link href="/#dsc-contact" className="nav-item contact">
+							</Link>
+							<Link to="/#dsc-contact" className="nav-item nav-link contact">
 								<h5>Contact Us</h5>
-							</Nav.Link>
+							</Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

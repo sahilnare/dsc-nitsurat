@@ -35,8 +35,8 @@ class TeamPage extends Component {
 				<Navbars />
 				<div className="description">
 					<Container className="TeamImage" fluid>
-						<Row style={{width: '100%', margin: '0 auto'}}>
-							<Col style={{width: '100%'}}>
+						<Row style={{ width: "100%", margin: "0 auto" }}>
+							<Col style={{ width: "100%" }}>
 								<Jumbotron className="main-text">
 									<div className="text">
 										<h1 className="title"> The Team </h1>
@@ -46,7 +46,14 @@ class TeamPage extends Component {
 										</h3>
 									</div>
 									<div className="webm">
-										<video autoPlay loop muted playsinline className="team-background" alt="team-background">
+										<video
+											autoPlay
+											loop
+											muted
+											playsinline
+											className="team-background"
+											alt="team-background"
+										>
 											<source type="video/webm" src={TeamBackground} />
 										</video>
 									</div>

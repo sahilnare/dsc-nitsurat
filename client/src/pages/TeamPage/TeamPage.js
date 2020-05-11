@@ -149,7 +149,7 @@ class TeamPage extends Component {
 									<br />
 									Sharma
 								</span>
-								<span class="caption">Developer</span>
+								<span class="caption">ML</span>
 							</div>
 							<div className="item">
 								<img src={IH} alt="Insiyah Hajoori" className="avatar" />

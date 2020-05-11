@@ -24,7 +24,6 @@ import HB from "../../img/avatar/2k19-2k20/hb.jpeg";
 import PT from "../../img/avatar/2k19-2k20/pt.jpeg";
 import PS from "../../img/avatar/2k19-2k20/ps.jpeg";
 
-
 import { Jumbotron, Container, Row, Col } from "react-bootstrap";
 import "./TeamPage.css";
 
@@ -33,28 +32,28 @@ class TeamPage extends Component {
 		return (
 			<div className="TeamPage">
 				<Navbars />
-                <div className="description">
-                    <Container className="TeamImage">
-                        <Row>
-                            <Col lg={12}>
-                                <Jumbotron className="main-text">
-                                    <h1 className="title"> The Team </h1>
-                                    <h3 className="sub-title">
-                                        {" "}
-                                        Presenting you the board of developers & tech enthusiasts.
-                                    </h3>
-                                </Jumbotron>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-                <a href="#team">
-                                <div className="round">
-                                    <svg class="arrows">
-                                        <path class="a3" d="M0 50 L16 72 L32 50"></path>
-                                    </svg>
-                                </div>
-                            </a>
+				<div className="description">
+					<Container className="TeamImage">
+						<Row>
+							<Col lg={12}>
+								<Jumbotron className="main-text">
+									<h1 className="title"> The Team </h1>
+									<h3 className="sub-title">
+										{" "}
+										Presenting you the board of developers & tech enthusiasts.
+									</h3>
+								</Jumbotron>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				<a href="#team">
+					<div className="round">
+						<svg class="arrows">
+							<path class="a3" d="M0 50 L16 72 L32 50"></path>
+						</svg>
+					</div>
+				</a>
 				<div id="team">
 					<Timeline lineColor={"#ddd"}>
 						<TimelineItem
@@ -127,17 +126,29 @@ class TeamPage extends Component {
 							</div>
 							<div className="item">
 								<img src={DS} alt="Divyam Srivastava" className="avatar" />
-								<span class="caption">Divyam<br/>Srivastava</span>
+								<span class="caption">
+									Divyam
+									<br />
+									Srivastava
+								</span>
 								<span class="caption">ML</span>
 							</div>
 							<div className="item">
 								<img src={SD} alt="Sarvesh Dubey" className="avatar" />
-								<span class="caption">Sarvesh<br/>Dubey</span>
+								<span class="caption">
+									Sarvesh
+									<br />
+									Dubey
+								</span>
 								<span class="caption">ML</span>
 							</div>
 							<div className="item">
 								<img src={RS} alt="Rishabh Sharma" className="avatar" />
-								<span class="caption">Rishabh<br/>Sharma</span>
+								<span class="caption">
+									Rishabh
+									<br />
+									Sharma
+								</span>
 								<span class="caption">Developer</span>
 							</div>
 							<div className="item">
@@ -155,7 +166,7 @@ class TeamPage extends Component {
 								<span class="caption">Pritesh Tripathi</span>
 								<span class="caption">Web</span>
 							</div>
-                            <div className="item">
+							<div className="item">
 								<img src={PS} alt="Prakash Saini" className="avatar" />
 								<span class="caption">Prakash Saini</span>
 								<span class="caption">IoT</span>

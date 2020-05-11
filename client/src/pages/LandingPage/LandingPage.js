@@ -6,7 +6,7 @@ import Logo from "../../img/dsc.jpg";
 import Connect from "../../img/features/connect.jpg";
 import Learn from "../../img/features/learn.jpg";
 import Grow from "../../img/features/grow.jpg";
-import Contact from "../../img/gif/contact.gif";
+import Contact from "../../img/gif/contact.webm";
 import ReactTypingEffect from "react-typing-effect";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { FaMeetup, FaMailBulk, FaLinkedin, FaGithub } from "react-icons/fa";
@@ -180,7 +180,9 @@ class LandingPage extends Component {
 								data-aos={this.state.dataAosRight}
 								data-aos-offset={this.state.aosOffset}
 							>
-								<img src={Contact} className="feature-design" alt="dsc-contact" />
+								<video autoPlay loop muted playsinline className="feature-design" alt="dsc-contact">
+							    <source type="video/webm" src={Contact} />
+								</video>
 							</Col>
 							<Col lg={1} />
 							<Col data-aos={this.state.dataAosLeft} data-aos-offset={this.state.aosOffset}>

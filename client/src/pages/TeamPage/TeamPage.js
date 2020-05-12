@@ -50,7 +50,7 @@ class TeamPage extends Component {
 											autoPlay
 											loop
 											muted
-											playsinline
+											playsInline
 											className="team-background"
 											alt="team-background"
 										>
@@ -64,8 +64,8 @@ class TeamPage extends Component {
 				</div>
 				<a href="#team">
 					<div className="round">
-						<svg class="arrows">
-							<path class="a3" d="M0 50 L16 72 L32 50"></path>
+						<svg className="arrows">
+							<path className="a3" d="M0 50 L16 72 L32 50"></path>
 						</svg>
 					</div>
 				</a>
@@ -80,52 +80,52 @@ class TeamPage extends Component {
 							<div className="item">
 								<img src={AJ} alt="Aemie Jariwala" className="avatar" />
 								<span className="caption">Aemie Jariwala</span>
-								<span class="caption">Blockchain</span>
+								<span className="caption">Blockchain</span>
 							</div>
 							<div className="item">
 								<img src={NKG} alt="Nikhil Kumar Gautam" className="avatar" />
-								<span class="caption">Nikhil Gautam</span>
-								<span class="caption">Web</span>
+								<span className="caption">Nikhil Gautam</span>
+								<span className="caption">Web</span>
 							</div>
 							<div className="item">
 								<img src={GS} alt="Garvit Saini" className="avatar" />
-								<span class="caption">Garvit Saini</span>
-								<span class="caption">Big Data</span>
+								<span className="caption">Garvit Saini</span>
+								<span className="caption">Big Data</span>
 							</div>
 							<div className="item">
 								<img src={SN} alt="Sahil Nare" className="avatar" />
-								<span class="caption">Sahil Nare</span>
-								<span class="caption">Game Dev</span>
+								<span className="caption">Sahil Nare</span>
+								<span className="caption">Game Dev</span>
 							</div>
 							<div className="item">
 								<img src={AS} alt="Avi Saini" className="avatar" />
-								<span class="caption">Avi Saini</span>
-								<span class="caption">Java Dev</span>
+								<span className="caption">Avi Saini</span>
+								<span className="caption">Java Dev</span>
 							</div>
 							<div className="item">
 								<img src={ST} alt="Sejal Tajane" className="avatar" />
-								<span class="caption">Sejal Tajane</span>
-								<span class="caption">Backend</span>
+								<span className="caption">Sejal Tajane</span>
+								<span className="caption">Backend</span>
 							</div>
 							<div className="item">
 								<img src={PP} alt="Prateek Pravanjan" className="avatar" />
-								<span class="caption">Prateek</span>
-								<span class="caption">CyberSecurity</span>
+								<span className="caption">Prateek</span>
+								<span className="caption">CyberSecurity</span>
 							</div>
 							<div className="item">
 								<img src={AD} alt="Aditya Datta" className="avatar" />
-								<span class="caption">Aditya Datta</span>
-								<span class="caption">Web</span>
+								<span className="caption">Aditya Datta</span>
+								<span className="caption">Web</span>
 							</div>
 							<div className="item">
 								<img src={MS} alt="Meet Soni" className="avatar" />
-								<span class="caption">Meet Soni</span>
-								<span class="caption">ML</span>
+								<span className="caption">Meet Soni</span>
+								<span className="caption">ML</span>
 							</div>
 							<div className="item">
 								<img src={A} alt="Angad" className="avatar" />
-								<span class="caption">Angad</span>
-								<span class="caption">ML</span>
+								<span className="caption">Angad</span>
+								<span className="caption">ML</span>
 							</div>
 						</TimelineItem>
 						<TimelineItem
@@ -137,54 +137,54 @@ class TeamPage extends Component {
 							<div className="item">
 								<img src={KS} alt="Kshitij Suri" className="avatar" />
 								<span className="caption">Kshitij Suri</span>
-								<span class="caption">DSC Lead</span>
+								<span className="caption">DSC Lead</span>
 							</div>
 							<div className="item">
 								<img src={DS} alt="Divyam Srivastava" className="avatar" />
-								<span class="caption">
+								<span className="caption">
 									Divyam
 									<br />
 									Srivastava
 								</span>
-								<span class="caption">ML</span>
+								<span className="caption">ML</span>
 							</div>
 							<div className="item">
 								<img src={SD} alt="Sarvesh Dubey" className="avatar" />
-								<span class="caption">
+								<span className="caption">
 									Sarvesh
 									<br />
 									Dubey
 								</span>
-								<span class="caption">ML</span>
+								<span className="caption">ML</span>
 							</div>
 							<div className="item">
 								<img src={RS} alt="Rishabh Sharma" className="avatar" />
-								<span class="caption">
+								<span className="caption">
 									Rishabh
 									<br />
 									Sharma
 								</span>
-								<span class="caption">ML</span>
+								<span className="caption">ML</span>
 							</div>
 							<div className="item">
 								<img src={IH} alt="Insiyah Hajoori" className="avatar" />
-								<span class="caption">Insiyah Hajoori</span>
-								<span class="caption">ML</span>
+								<span className="caption">Insiyah Hajoori</span>
+								<span className="caption">ML</span>
 							</div>
 							<div className="item">
 								<img src={HB} alt="Harshwardhan Bhangale" className="avatar" />
-								<span class="caption">Harshwardhan</span>
-								<span class="caption">IoT</span>
+								<span className="caption">Harshwardhan</span>
+								<span className="caption">IoT</span>
 							</div>
 							<div className="item">
 								<img src={PT} alt="Pritesh Tripathi" className="avatar" />
-								<span class="caption">Pritesh Tripathi</span>
-								<span class="caption">Web</span>
+								<span className="caption">Pritesh Tripathi</span>
+								<span className="caption">Web</span>
 							</div>
 							<div className="item">
 								<img src={PS} alt="Prakash Saini" className="avatar" />
-								<span class="caption">Prakash Saini</span>
-								<span class="caption">IoT</span>
+								<span className="caption">Prakash Saini</span>
+								<span className="caption">IoT</span>
 							</div>
 						</TimelineItem>
 					</Timeline>

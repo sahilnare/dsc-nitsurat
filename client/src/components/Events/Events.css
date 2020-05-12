@@ -1,0 +1,89 @@
+.instagram, .instagram:hover {
+    color: #4d59cf;
+}
+
+.youtube, .youtube:hover {
+    color: #d02873;
+}
+
+.card {
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.modal {
+    transform: translateY(25vh);
+}
+
+@media screen and (max-width: 450px) {
+    .modal {
+        transform: translateY(15vh);
+    }
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.event-image {
+    width: 375px;
+    height: 375px;
+}
+
+.content {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .custom-dialog {
+        max-width: 90% !important; 
+    }
+
+    .event-image {
+        width: 325px;
+        height: 335px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 710px) and (max-width: 805px) {
+    .event-image {
+        width: 295px;
+        height: 350px;
+    }
+
+    .content {
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 710px) {
+    .event-image {
+        width: 265px;
+        height: 370px;
+    }
+
+    .content {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .custom-dialog {
+        max-width: 100% !important; 
+    }
+
+    .modal {
+        transform: translateY(10vh);
+    }
+}
+
+@media screen and (max-height: 570px) {
+    .modal {
+        transform: translateY(0);
+    }
+}

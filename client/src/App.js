@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import ConstructPage from "./pages/ConstructPage/ConstructPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import TeamPage from "./pages/TeamPage/TeamPage";
+import EventPage from "./pages/EventPage/EventPage";
 
 function App() {
 	return (
@@ -14,7 +15,7 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={LandingPage} />
 					<Route exact path="/about" component={AboutPage} />
-					<Route exact path="/events" component={ConstructPage} />
+					<Route exact path="/events" component={EventPage} />
 					<Route exact path="/team" component={TeamPage} />
 				</Switch>
 			</Router>

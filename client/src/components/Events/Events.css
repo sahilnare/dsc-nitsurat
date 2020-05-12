@@ -2,6 +2,10 @@
     color: #4d59cf;
 }
 
+.EventCard {
+  cursor: pointer;
+}
+
 .youtube, .youtube:hover {
     color: #d02873;
 }
@@ -35,9 +39,10 @@
     margin-left: 2rem;
 }
 
+
 @media screen and (max-width: 992px) {
     .custom-dialog {
-        max-width: 90% !important; 
+        max-width: 90% !important;
     }
 
     .event-image {
@@ -74,11 +79,28 @@
 
 @media screen and (max-width: 575px) {
     .custom-dialog {
-        max-width: 100% !important; 
+        max-width: 90% !important;
+        margin: 0 auto;
+    }
+
+    .modal-header {
+      padding: 0.5rem 1rem;
+    }
+
+    .modal-body {
+      padding: 0.5rem;
+    }
+
+    .modal-body .content {
+      padding: 1rem;
     }
 
     .modal {
         transform: translateY(10vh);
+    }
+
+    .card {
+      margin-top: 3rem;
     }
 }
 

@@ -15,7 +15,8 @@ import ModalTitle from "react-bootstrap/ModalTitle";
 
 class Event1 extends Component {
 	state = {
-		isOpen: false
+		isOpen: false,
+		iconSize: 45
 	};
 
 	openModal = () => {
@@ -31,8 +32,8 @@ class Event1 extends Component {
 			<p>
 			Everyone must have heard about Bitcoin and the technology behind it, Blockchain, and how it's going to revolutionize the digital supply chain.<br/>
 			But do you really know how it all works? How it ties into cryptocurrency or how the founder behind it is still unknown.<br/><br/>
-			
-			DSC, SVNIT will be hosting a webinar to introduce you to different aspects of the exciting and emerging areas of 
+
+			DSC, SVNIT will be hosting a webinar to introduce you to different aspects of the exciting and emerging areas of
 			blockchain and cryptocurrency in a session by industrial expert Punit Agarwal, founder of Zubi.<br/>
 			Join the webinar via Youtube Live on 12th May, from 6-7 PM to know all about the crypto secrets.
 			</p>
@@ -40,10 +41,27 @@ class Event1 extends Component {
 		);
 	};
 
+	componentDidMount() {
+		window.addEventListener("resize", this.resize.bind(this));
+		this.resize();
+	}
+
+	resize() {
+		if (window.innerWidth <= 575) {
+			this.setState({
+				iconSize: 32
+			});
+		} else {
+			this.setState({
+				iconSize: 45
+			});
+		}
+	}
+
 	render() {
 		return (
 			<div className="Event1">
-				<div onClick={() => {this.openModal()}}>
+				<div onClick={() => {this.openModal()}} className="EventCard">
 					<Card>
 						<Card.Img variant="top" src={Blockchain} />
 						<Card.Body>
@@ -52,8 +70,8 @@ class Event1 extends Component {
 							<Card.Text>
 								Webinar on blockchain by founder of Zubi.io on DSC Youtube Channel.
 							</Card.Text>
-							<Card.Link href="https://www.instagram.com/p/B_zk-toJmms/" target="_blank" className="social-links instagram"><FaInstagram /></Card.Link>
-							<Card.Link href="https://www.youtube.com/watch?v=U9K1501G7IA" target="_blank" className="social-links youtube"><FaYoutube /></Card.Link>
+							<Card.Link href="https://www.instagram.com/p/B_zk-toJmms/" target="_blank" className="social-links instagram"><FaInstagram size={this.state.iconSize} /></Card.Link>
+							<Card.Link href="https://www.youtube.com/watch?v=U9K1501G7IA" target="_blank" className="social-links youtube"><FaYoutube size={this.state.iconSize} /></Card.Link>
 						</Card.Body>
 					</Card>
 				</div>
@@ -76,7 +94,7 @@ class Event1 extends Component {
 								{window.innerWidth >= 650 && window.innerWidth < 992 && (
 									<Col lg={0} sm={2} className="blank" />
 								)}
-								{window.innerWidth >= 650 ? <Col lg={5} sm={6} className="content">{this.content()}</Col> : 
+								{window.innerWidth >= 650 ? <Col lg={5} sm={6} className="content">{this.content()}</Col> :
 								<Col sm={12} className="content">{this.content()}</Col>}
 							</Row>
 						</Container>

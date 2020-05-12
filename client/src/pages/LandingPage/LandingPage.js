@@ -180,7 +180,7 @@ class LandingPage extends Component {
 								data-aos={this.state.dataAosRight}
 								data-aos-offset={this.state.aosOffset}
 							>
-								<video autoPlay loop muted playsinline className="feature-design" alt="dsc-contact">
+								<video autoPlay loop muted playsInline className="feature-design" alt="dsc-contact">
 									<source type="video/webm" src={Contact} />
 								</video>
 							</Col>

@@ -48,7 +48,13 @@ class Footer extends Component {
 									<a href="/team">Team</a>
 								</li>
 								<li>
-									<a href="https://github.com/dsc-nit-surat/dsc-nitsurat/blob/master/contributing.md">Contribute</a>
+									<a
+										href="https://github.com/dsc-nit-surat/dsc-nitsurat/blob/master/contributing.md"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Contribute
+									</a>
 								</li>
 							</ul>
 						</div>

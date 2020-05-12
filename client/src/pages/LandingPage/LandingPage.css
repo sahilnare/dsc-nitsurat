@@ -26,9 +26,10 @@
 }
 
 .LandingPage .dsc-features .feature-image .feature-design {
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
 }
+
 
 .LandingPage .reasons {
   font-size: 60px;

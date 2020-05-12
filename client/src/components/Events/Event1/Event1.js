@@ -55,11 +55,11 @@ class Event1 extends Component {
 	resize() {
 		if (window.innerWidth <= 575) {
 			this.setState({
-				iconSize: 32,
+				iconSize: 28,
 			});
 		} else {
 			this.setState({
-				iconSize: 45,
+				iconSize: 35,
 			});
 		}
 	}

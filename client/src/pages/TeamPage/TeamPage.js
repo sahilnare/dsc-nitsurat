@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 import TeamBackground from "../../img/gif/team.webm";
 
+// 2k20-2k21 core team
 import AJ from "../../img/avatar/2k20-2k21/aj.webp";
 import NKG from "../../img/avatar/2k20-2k21/nkg.webp";
 import GS from "../../img/avatar/2k20-2k21/gs.webp";
@@ -16,6 +17,7 @@ import AD from "../../img/avatar/2k20-2k21/ad.webp";
 import MS from "../../img/avatar/2k20-2k21/ms.webp";
 import A from "../../img/avatar/2k20-2k21/a.webp";
 
+// 2k19-2k20 core team
 import KS from "../../img/avatar/2k19-2k20/ks.webp";
 import DS from "../../img/avatar/2k19-2k20/ds.webp";
 import SD from "../../img/avatar/2k19-2k20/sd.webp";
@@ -24,6 +26,12 @@ import IH from "../../img/avatar/2k19-2k20/ih.webp";
 import HB from "../../img/avatar/2k19-2k20/hb.webp";
 import PT from "../../img/avatar/2k19-2k20/pt.webp";
 import PS from "../../img/avatar/2k19-2k20/ps.webp";
+import DB from "../../img/avatar/2k19-2k20/db.webp";
+import AJS from "../../img/avatar/2k19-2k20/aj.webp";
+import SA from "../../img/avatar/2k19-2k20/sa.webp";
+import KR from "../../img/avatar/2k19-2k20/kr.webp";
+import SJ from "../../img/avatar/2k19-2k20/sj.webp";
+import AST from "../../img/avatar/2k19-2k20/ast.webp";
 
 import { Jumbotron, Container, Row, Col } from "react-bootstrap";
 import "./TeamPage.css";
@@ -185,6 +193,36 @@ class TeamPage extends Component {
 								<img src={PS} alt="Prakash Saini" className="avatar" />
 								<span className="caption">Prakash Saini</span>
 								<span className="caption">IoT</span>
+							</div>
+							<div className="item">
+								<img src={DB} alt="Dhruvi Butti" className="avatar" />
+								<span className="caption">Dhruvi Butti</span>
+								<span className="caption">UI-UX/Web</span>
+							</div>
+							<div className="item">
+								<img src={AJS} alt="Aditya Jaiswal" className="avatar" />
+								<span className="caption">Aditya Jaiswal</span>
+								<span className="caption">App Dev</span>
+							</div>
+							<div className="item">
+								<img src={SA} alt="Shraddha Agarwal" className="avatar" />
+								<span className="caption">Shraddha<br/>Agarwal</span>
+								<span className="caption">Web</span>
+							</div>
+							<div className="item">
+								<img src={KR} alt="Kishan Rathore" className="avatar" />
+								<span className="caption">Kishan Rathore</span>
+								<span className="caption">App Dev</span>
+							</div>
+							<div className="item">
+								<img src={SJ} alt="Shishir Joshi" className="avatar" />
+								<span className="caption">Shishir Joshi</span>
+								<span className="caption">CyberSecurity</span>
+							</div>
+							<div className="item">
+								<img src={AST} alt="Anuj Sawal" className="avatar" />
+								<span className="caption">Anuj Sawal</span>
+								<span className="caption">Marketing</span>
 							</div>
 						</TimelineItem>
 					</Timeline>

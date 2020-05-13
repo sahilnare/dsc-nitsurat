@@ -37,6 +37,23 @@ import { Jumbotron, Container, Row, Col } from "react-bootstrap";
 import "./TeamPage.css";
 
 class TeamPage extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			videoLoaded: false,
+		};
+	}
+	componentDidMount() {
+		this.preloadVideo();
+	}
+
+	preloadVideo = () => {
+		const video = document.getElementsByClassName("team-background")[0];
+		video.onloadeddata = () => {
+			this.setState({ videoLoaded: true });
+		};
+	};
+
 	render() {
 		return (
 			<div className="TeamPage">
@@ -70,163 +87,171 @@ class TeamPage extends Component {
 						</Row>
 					</Container>
 				</div>
-				<a href="#team">
-					<div className="round">
-						<svg className="arrows">
-							<path className="a3" d="M0 50 L16 72 L32 50"></path>
-						</svg>
+				{this.state.videoLoaded && (
+					<a href="#team">
+						<div className="round">
+							<svg className="arrows">
+								<path className="a3" d="M0 50 L16 72 L32 50"></path>
+							</svg>
+						</div>
+					</a>
+				)}
+				{this.state.videoLoaded && (
+					<div id="team">
+						<Timeline lineColor={"#ddd"}>
+							<TimelineItem
+								key="001"
+								dateText="2K20-2K21"
+								style={{ color: "#4083f7" }}
+								dateInnerStyle={{ background: "#4083f7" }}
+							>
+								<div className="item">
+									<img src={AJ} alt="Aemie Jariwala" className="avatar" />
+									<span className="caption">Aemie Jariwala</span>
+									<span className="caption">Blockchain</span>
+								</div>
+								<div className="item">
+									<img src={NKG} alt="Nikhil Kumar Gautam" className="avatar" />
+									<span className="caption">Nikhil Gautam</span>
+									<span className="caption">Web</span>
+								</div>
+								<div className="item">
+									<img src={GS} alt="Garvit Saini" className="avatar" />
+									<span className="caption">Garvit Saini</span>
+									<span className="caption">Big Data</span>
+								</div>
+								<div className="item">
+									<img src={SN} alt="Sahil Nare" className="avatar" />
+									<span className="caption">Sahil Nare</span>
+									<span className="caption">Game Dev</span>
+								</div>
+								<div className="item">
+									<img src={AS} alt="Avi Saini" className="avatar" />
+									<span className="caption">Avi Saini</span>
+									<span className="caption">Java Dev</span>
+								</div>
+								<div className="item">
+									<img src={ST} alt="Sejal Tajane" className="avatar" />
+									<span className="caption">Sejal Tajane</span>
+									<span className="caption">Backend</span>
+								</div>
+								<div className="item">
+									<img src={PP} alt="Prateek Pravanjan" className="avatar" />
+									<span className="caption">Prateek</span>
+									<span className="caption">CyberSecurity</span>
+								</div>
+								<div className="item">
+									<img src={AD} alt="Aditya Datta" className="avatar" />
+									<span className="caption">Aditya Datta</span>
+									<span className="caption">Web</span>
+								</div>
+								<div className="item">
+									<img src={MS} alt="Meet Soni" className="avatar" />
+									<span className="caption">Meet Soni</span>
+									<span className="caption">ML</span>
+								</div>
+								<div className="item">
+									<img src={A} alt="Angad" className="avatar" />
+									<span className="caption">Angad</span>
+									<span className="caption">ML</span>
+								</div>
+							</TimelineItem>
+							<TimelineItem
+								key="002"
+								dateText="2K19-2K20"
+								style={{ color: "#fa4335" }}
+								dateInnerStyle={{ background: "#fa4355" }}
+							>
+								<div className="item">
+									<img src={KS} alt="Kshitij Suri" className="avatar" />
+									<span className="caption">Kshitij Suri</span>
+									<span className="caption">DSC Lead</span>
+								</div>
+								<div className="item">
+									<img src={DS} alt="Divyam Srivastava" className="avatar" />
+									<span className="caption">
+										Divyam
+										<br />
+										Srivastava
+									</span>
+									<span className="caption">ML</span>
+								</div>
+								<div className="item">
+									<img src={SD} alt="Sarvesh Dubey" className="avatar" />
+									<span className="caption">
+										Sarvesh
+										<br />
+										Dubey
+									</span>
+									<span className="caption">ML</span>
+								</div>
+								<div className="item">
+									<img src={RS} alt="Rishabh Sharma" className="avatar" />
+									<span className="caption">
+										Rishabh
+										<br />
+										Sharma
+									</span>
+									<span className="caption">ML</span>
+								</div>
+								<div className="item">
+									<img src={IH} alt="Insiyah Hajoori" className="avatar" />
+									<span className="caption">Insiyah Hajoori</span>
+									<span className="caption">ML</span>
+								</div>
+								<div className="item">
+									<img src={HB} alt="Harshwardhan Bhangale" className="avatar" />
+									<span className="caption">Harshwardhan</span>
+									<span className="caption">IoT</span>
+								</div>
+								<div className="item">
+									<img src={PT} alt="Pritesh Tripathi" className="avatar" />
+									<span className="caption">Pritesh Tripathi</span>
+									<span className="caption">Web</span>
+								</div>
+								<div className="item">
+									<img src={PS} alt="Prakash Saini" className="avatar" />
+									<span className="caption">Prakash Saini</span>
+									<span className="caption">IoT</span>
+								</div>
+								<div className="item">
+									<img src={DB} alt="Dhruvi Butti" className="avatar" />
+									<span className="caption">Dhruvi Butti</span>
+									<span className="caption">UI-UX/Web</span>
+								</div>
+								<div className="item">
+									<img src={AJS} alt="Aditya Jaiswal" className="avatar" />
+									<span className="caption">Aditya Jaiswal</span>
+									<span className="caption">App Dev</span>
+								</div>
+								<div className="item">
+									<img src={SA} alt="Shraddha Agarwal" className="avatar" />
+									<span className="caption">
+										Shraddha
+										<br />
+										Agarwal
+									</span>
+									<span className="caption">Web</span>
+								</div>
+								<div className="item">
+									<img src={KR} alt="Kishan Rathore" className="avatar" />
+									<span className="caption">Kishan Rathore</span>
+									<span className="caption">App Dev</span>
+								</div>
+								<div className="item">
+									<img src={SJ} alt="Shishir Joshi" className="avatar" />
+									<span className="caption">Shishir Joshi</span>
+									<span className="caption">CyberSecurity</span>
+								</div>
+								<div className="item">
+									<img src={AST} alt="Anuj Sawal" className="avatar" />
+									<span className="caption">Anuj Sawal</span>
+									<span className="caption">Marketing</span>
+								</div>
+							</TimelineItem>
+						</Timeline>
 					</div>
-				</a>
-				<div id="team">
-					<Timeline lineColor={"#ddd"}>
-						<TimelineItem
-							key="001"
-							dateText="2K20-2K21"
-							style={{ color: "#4083f7" }}
-							dateInnerStyle={{ background: "#4083f7" }}
-						>
-							<div className="item">
-								<img src={AJ} alt="Aemie Jariwala" className="avatar" />
-								<span className="caption">Aemie Jariwala</span>
-								<span className="caption">Blockchain</span>
-							</div>
-							<div className="item">
-								<img src={NKG} alt="Nikhil Kumar Gautam" className="avatar" />
-								<span className="caption">Nikhil Gautam</span>
-								<span className="caption">Web</span>
-							</div>
-							<div className="item">
-								<img src={GS} alt="Garvit Saini" className="avatar" />
-								<span className="caption">Garvit Saini</span>
-								<span className="caption">Big Data</span>
-							</div>
-							<div className="item">
-								<img src={SN} alt="Sahil Nare" className="avatar" />
-								<span className="caption">Sahil Nare</span>
-								<span className="caption">Game Dev</span>
-							</div>
-							<div className="item">
-								<img src={AS} alt="Avi Saini" className="avatar" />
-								<span className="caption">Avi Saini</span>
-								<span className="caption">Java Dev</span>
-							</div>
-							<div className="item">
-								<img src={ST} alt="Sejal Tajane" className="avatar" />
-								<span className="caption">Sejal Tajane</span>
-								<span className="caption">Backend</span>
-							</div>
-							<div className="item">
-								<img src={PP} alt="Prateek Pravanjan" className="avatar" />
-								<span className="caption">Prateek</span>
-								<span className="caption">CyberSecurity</span>
-							</div>
-							<div className="item">
-								<img src={AD} alt="Aditya Datta" className="avatar" />
-								<span className="caption">Aditya Datta</span>
-								<span className="caption">Web</span>
-							</div>
-							<div className="item">
-								<img src={MS} alt="Meet Soni" className="avatar" />
-								<span className="caption">Meet Soni</span>
-								<span className="caption">ML</span>
-							</div>
-							<div className="item">
-								<img src={A} alt="Angad" className="avatar" />
-								<span className="caption">Angad</span>
-								<span className="caption">ML</span>
-							</div>
-						</TimelineItem>
-						<TimelineItem
-							key="002"
-							dateText="2K19-2K20"
-							style={{ color: "#fa4335" }}
-							dateInnerStyle={{ background: "#fa4355" }}
-						>
-							<div className="item">
-								<img src={KS} alt="Kshitij Suri" className="avatar" />
-								<span className="caption">Kshitij Suri</span>
-								<span className="caption">DSC Lead</span>
-							</div>
-							<div className="item">
-								<img src={DS} alt="Divyam Srivastava" className="avatar" />
-								<span className="caption">
-									Divyam
-									<br />
-									Srivastava
-								</span>
-								<span className="caption">ML</span>
-							</div>
-							<div className="item">
-								<img src={SD} alt="Sarvesh Dubey" className="avatar" />
-								<span className="caption">
-									Sarvesh
-									<br />
-									Dubey
-								</span>
-								<span className="caption">ML</span>
-							</div>
-							<div className="item">
-								<img src={RS} alt="Rishabh Sharma" className="avatar" />
-								<span className="caption">
-									Rishabh
-									<br />
-									Sharma
-								</span>
-								<span className="caption">ML</span>
-							</div>
-							<div className="item">
-								<img src={IH} alt="Insiyah Hajoori" className="avatar" />
-								<span className="caption">Insiyah Hajoori</span>
-								<span className="caption">ML</span>
-							</div>
-							<div className="item">
-								<img src={HB} alt="Harshwardhan Bhangale" className="avatar" />
-								<span className="caption">Harshwardhan</span>
-								<span className="caption">IoT</span>
-							</div>
-							<div className="item">
-								<img src={PT} alt="Pritesh Tripathi" className="avatar" />
-								<span className="caption">Pritesh Tripathi</span>
-								<span className="caption">Web</span>
-							</div>
-							<div className="item">
-								<img src={PS} alt="Prakash Saini" className="avatar" />
-								<span className="caption">Prakash Saini</span>
-								<span className="caption">IoT</span>
-							</div>
-							<div className="item">
-								<img src={DB} alt="Dhruvi Butti" className="avatar" />
-								<span className="caption">Dhruvi Butti</span>
-								<span className="caption">UI-UX/Web</span>
-							</div>
-							<div className="item">
-								<img src={AJS} alt="Aditya Jaiswal" className="avatar" />
-								<span className="caption">Aditya Jaiswal</span>
-								<span className="caption">App Dev</span>
-							</div>
-							<div className="item">
-								<img src={SA} alt="Shraddha Agarwal" className="avatar" />
-								<span className="caption">Shraddha<br/>Agarwal</span>
-								<span className="caption">Web</span>
-							</div>
-							<div className="item">
-								<img src={KR} alt="Kishan Rathore" className="avatar" />
-								<span className="caption">Kishan Rathore</span>
-								<span className="caption">App Dev</span>
-							</div>
-							<div className="item">
-								<img src={SJ} alt="Shishir Joshi" className="avatar" />
-								<span className="caption">Shishir Joshi</span>
-								<span className="caption">CyberSecurity</span>
-							</div>
-							<div className="item">
-								<img src={AST} alt="Anuj Sawal" className="avatar" />
-								<span className="caption">Anuj Sawal</span>
-								<span className="caption">Marketing</span>
-							</div>
-						</TimelineItem>
-					</Timeline>
-				</div>
+				)}
 				<Footer />
 			</div>
 		);

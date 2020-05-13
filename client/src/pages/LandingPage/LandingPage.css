@@ -14,9 +14,10 @@
 }
 
 .LandingPage .dsc-body .image .dsc-logo {
-  width: 80%;
+  width: 110%;
   height: 100%;
   margin: 0 auto;
+  margin-top: 4rem;
   padding: 0 90px;
 }
 
@@ -34,7 +35,7 @@
 .LandingPage .reasons {
   font-size: 60px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10rem;
   background-color: #f8f9fa !important;
 }
 
@@ -82,9 +83,10 @@
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
-      height: 110%;
-      width: 95%;
-      padding: 0 75px;
+      height: 95%;
+      width: 115%;
+      margin-top: 7.5rem;
+      padding: 0 70px;
     }
 
     .LandingPage .dsc-body .context {
@@ -102,6 +104,7 @@
 
     .LandingPage .reasons {
       font-size: 65px;
+      margin-top: 12rem;
     }
 
     .LandingPage .dsc-features .feature-description {
@@ -124,8 +127,9 @@
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
-      height: 110%;
-      width: 95%;
+      height: 90%;
+      width: 115%;
+      margin-top: 4.75rem;
       padding: 0 60px;
     }
 
@@ -170,8 +174,9 @@
     }
 
     .LandingPage .dsc-body .image .dsc-logo {
-      width: 94%;
-      height: 110%;
+      width: 110%;
+      height: 90%;
+      margin-top: 5.5rem;
       padding: 0 50px;
     }
 
@@ -236,13 +241,13 @@
 
     .LandingPage .dsc-body .image .dsc-logo {
       width: 100%;
-      height: auto;
+      height: 110%;
       padding: 0 80px;
     }
 
     .LandingPage .dsc-body .context {
       font-size: 85px;
-      margin-top: 2rem;
+      margin-top: 15rem;
       margin-bottom: 5rem;
     }
 
@@ -260,6 +265,7 @@
 
     .LandingPage .reasons {
       font-size: 56px;
+      margin-top: 5rem;
     }
 
     .LandingPage .dsc-features .feature-description {
@@ -298,13 +304,13 @@
 
     .LandingPage .dsc-body .image .dsc-logo {
       width: 100%;
-      height: auto;
+      height: 110%;
       padding: 0 40px;
     }
 
     .LandingPage .dsc-body .context {
       font-size: 60px;
-      margin-top: 2rem;
+      margin-top: 12rem;
       margin-bottom: 4rem;
     }
 
@@ -370,14 +376,16 @@
 @media screen and (max-width: 420px) {
     .LandingPage .dsc-body .image .dsc-logo {
       width: 100%;
+      height: 110%;
       margin: 0 auto;
+      margin-top: 4rem;
       padding: 0 10px;
     }
 
     .LandingPage .dsc-body .context {
       font-size: 45px;
-      margin-top: 2rem;
-      margin-bottom: 4rem;
+      margin-top: 12rem;
+      margin-bottom: 3rem;
     }
 
     .LandingPage .dsc-body .highlight {
@@ -394,6 +402,7 @@
 
     .LandingPage .reasons {
       font-size: 30px;
+      margin-top: 4rem;
     }
 
     .LandingPage .dsc-features .feature-description {

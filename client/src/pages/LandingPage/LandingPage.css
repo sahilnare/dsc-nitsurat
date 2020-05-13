@@ -6,7 +6,7 @@
     margin-top: 15rem;
     font-size: 100px;
     text-align: center;
-    font-family: "Open Sans";
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .LandingPage .dsc-body .highlight {
@@ -37,6 +37,7 @@
   text-align: center;
   margin-top: 10rem;
   background-color: #f8f9fa !important;
+  font-family: 'Vollkorn', serif;
 }
 
 .LandingPage .contact {

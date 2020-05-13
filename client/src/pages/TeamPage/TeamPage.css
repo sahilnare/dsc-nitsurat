@@ -25,11 +25,13 @@
     margin-bottom: 0.75rem;
     font-size: 45px;
     text-align: left;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .TeamImage .sub-title {
   font-size: 30px;
   text-align: left;
+  font-family: 'Vollkorn', serif;
 }
 
 
@@ -102,8 +104,13 @@
 .item .caption {
     display: block;
     color: #767;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3rem;
 }
 
+.team-background {
+  width: 350px;
+}
 
 @media screen and (min-width: 1475px) and (max-width: 1675px) {
   .TeamImage .title {
@@ -157,6 +164,10 @@
 
   .TeamImage .sub-title {
     text-align: center;
+  }
+
+  .item .caption {
+      font-size: 1.1rem;
   }
 }
 

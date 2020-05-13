@@ -88,6 +88,7 @@
 
 .explore {
   float: right;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 @media (max-width:991px) {
@@ -100,7 +101,7 @@
   .site-footer {
     padding-bottom: 0;
   }
-  
+
   .site-footer .copyright-text,.site-footer .social-icons {
     text-align: center;
   }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaBook } from "react-icons/fa";
 import Navbars from "../../components/Navbars/Navbars";
 import Footer from "../../components/Footer/Footer";
 import Event1 from "../../components/Events/Event1/Event1";
@@ -12,7 +11,7 @@ class EventPage extends Component {
 		return (
 			<div className="EventPage">
 				<Navbars />
-				<h1 className="title">DSC NIT SURAT JOURNAL <FaBook /></h1>
+				<h1 className="title">DSC NIT SURAT JOURNAL</h1>
 				<Container>
 					<Row>
 						<Col lg={4} md={6} sm={6} xs={12}>

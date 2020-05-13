@@ -23,27 +23,13 @@ class LandingPage extends Component {
 			featArr: true,
 			dataAosLeft: "fade-left",
 			dataAosRight: "fade-right",
-			titleColor: "#4287F6",
-			count: 0
 		};
-		this.titleColorFunc = this.titleColorFunc.bind(this);
-	}
-
-	titleColorFunc = (colors) => {
-		if(this.state.count > 3) {
-			this.setState({count: 0}, () => this.setState({titleColor: colors[this.state.count]}))
-		}
-		else {
-			this.setState({titleColor: colors[this.state.count]}, () => this.setState({count: this.state.count+1}));
-		}
 	}
 
 	componentDidMount() {
 		AOS.init();
 		window.addEventListener("resize", this.resize.bind(this));
 		this.resize();
-		const colors = ['#4287F6', '#109D59', '#FCBD01', '#E94334'];
-		setInterval(() => this.titleColorFunc(colors), 1500);
 	}
 
 	resize() {
@@ -75,7 +61,7 @@ class LandingPage extends Component {
 						</Col>
 						<Col lg={6}>
 							<h1 className="context">
-								<span style={{color: this.state.titleColor}}>Here, you can</span> <br />
+								<span>Here, you can</span> <br />
 								<ReactTypingEffect
 									className="highlight"
 									text={["develop.", "innovate.", "connect.", "build.", "grow."]}

@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 
 import { FaInstagram } from "react-icons/fa";
 import { Container, Row, Col } from "react-bootstrap";
-import Orientation from "../img/01-event.webp";
+import Fedora from "../img/02-event.webp";
 import "../Events.css";
 
 // Importing all Modal Requirements
@@ -30,20 +30,18 @@ class Event5 extends Component {
 	content = () => {
 		return (
 			<p>
-				We are from DSC, which stands for Developer's Student Club, facilitated by Google
-				Developers' Group.
+				By now most of you must've come across people saying Open source, development and
+				contributions. These terms, though being a little self-explanatory, have deep meanings and
+				backgrounds.
 				<br />
-				At DSC, our fundamental intention is to help you channel all your potential free time and
-				energy into learning development skills that will help you build real-world projects, which
-				ultimately will add value to your profiles.
+				To clear the fog obfuscating you, we've come up with a seminar wherein we'll introduce you
+				to Open Source Software(OSS) and ways of getting associated with it through incentives like
+				Outreachy and Google Summer of Code.
 				<br />
 				<br />
-				Through workshops, meet-ups and seminars, we will help you find the specific areas of
-				technology where your zeal lies. Who doesn't want their candidatures to take an edge over
-				others? We are certain we can help you with that. To know more about us and how to become a
-				part of our family, we are organising an orientation wherein we'll provide you with a deeper
-				insight about every facet of DSC.
-				<br />
+				Fedora, an open source Linux based OS, through it's initiative of Women in Fedora aims to
+				engender involvement of women in Fedora's OSS community and help them make valuable
+				contributions to the Fedora project.
 			</p>
 		);
 	};
@@ -75,13 +73,15 @@ class Event5 extends Component {
 					className="EventCard"
 				>
 					<Card>
-						<Card.Img variant="top" src={Orientation} />
+						<Card.Img variant="top" src={Fedora} />
 						<Card.Body>
-							<Card.Title>Orientation 2k19</Card.Title>
-							<Card.Subtitle className="mb-2 text-muted">October 15, 5:30 PM IST</Card.Subtitle>
-							<Card.Text>DSC orientation to spread the importance and features of DSC.</Card.Text>
+							<Card.Title>Women in Fedora</Card.Title>
+							<Card.Subtitle className="mb-2 text-muted">November 6, 6 PM IST</Card.Subtitle>
+							<Card.Text>
+								Talk on the fedora organization by outreachy intern Shraddha Agarwal.
+							</Card.Text>
 							<Card.Link
-								href="https://www.instagram.com/p/B3jj0TzjKmW/"
+								href="https://www.instagram.com/p/B4fiGyTDr9C/"
 								target="_blank"
 								className="social-links instagram"
 							>
@@ -100,14 +100,14 @@ class Event5 extends Component {
 					aria-labelledby="Modal related to the event"
 				>
 					<ModalHeader closeButton>
-						<ModalTitle>Orientation 2k19</ModalTitle>
+						<ModalTitle>Women in Fedora</ModalTitle>
 					</ModalHeader>
 					<ModalBody>
 						<Container>
 							<Row>
 								{window.innerWidth >= 650 && (
 									<Col lg={6} sm={4} xs={4}>
-										<img src={Orientation} alt="orientation" className="event-image" />
+										<img src={Fedora} alt="Fedora" className="event-image" />
 									</Col>
 								)}
 								{window.innerWidth >= 650 && window.innerWidth < 992 && (

@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 
 import { FaInstagram } from "react-icons/fa";
 import { Container, Row, Col } from "react-bootstrap";
-import Orientation from "../img/01-event.webp";
+import Flutter from "../img/04-event.webp";
 import "../Events.css";
 
 // Importing all Modal Requirements
@@ -30,20 +30,13 @@ class Event5 extends Component {
 	content = () => {
 		return (
 			<p>
-				We are from DSC, which stands for Developer's Student Club, facilitated by Google
-				Developers' Group.
-				<br />
-				At DSC, our fundamental intention is to help you channel all your potential free time and
-				energy into learning development skills that will help you build real-world projects, which
-				ultimately will add value to your profiles.
+				Developers' Student Club is back with another hands on workshop on Cross Platform
+				Application Development. Starting from the very basics, in this workshop, we'll teach you
+				about the construction of User Interface in a mobile handset.
 				<br />
 				<br />
-				Through workshops, meet-ups and seminars, we will help you find the specific areas of
-				technology where your zeal lies. Who doesn't want their candidatures to take an edge over
-				others? We are certain we can help you with that. To know more about us and how to become a
-				part of our family, we are organising an orientation wherein we'll provide you with a deeper
-				insight about every facet of DSC.
-				<br />
+				You'll be able to successfully create basic Android, iOS, Web, Desktop and Embedded app with
+				a codebase. Stop playing with apps, it is your turn to start creating them!
 			</p>
 		);
 	};
@@ -75,13 +68,16 @@ class Event5 extends Component {
 					className="EventCard"
 				>
 					<Card>
-						<Card.Img variant="top" src={Orientation} />
+						<Card.Img variant="top" src={Flutter} />
 						<Card.Body>
-							<Card.Title>Orientation 2k19</Card.Title>
-							<Card.Subtitle className="mb-2 text-muted">October 15, 5:30 PM IST</Card.Subtitle>
-							<Card.Text>DSC orientation to spread the importance and features of DSC.</Card.Text>
+							<Card.Title>Flutter Workshop</Card.Title>
+							<Card.Subtitle className="mb-2 text-muted">January 16, 6 PM IST</Card.Subtitle>
+							<Card.Text>
+								Get started with flutter, a cross platform to build beautiful apps and join with us
+								in this workshop.
+							</Card.Text>
 							<Card.Link
-								href="https://www.instagram.com/p/B3jj0TzjKmW/"
+								href="https://www.instagram.com/p/B7WQsJXjO4Z/"
 								target="_blank"
 								className="social-links instagram"
 							>
@@ -100,14 +96,14 @@ class Event5 extends Component {
 					aria-labelledby="Modal related to the event"
 				>
 					<ModalHeader closeButton>
-						<ModalTitle>Orientation 2k19</ModalTitle>
+						<ModalTitle>Flutter Workshop</ModalTitle>
 					</ModalHeader>
 					<ModalBody>
 						<Container>
 							<Row>
 								{window.innerWidth >= 650 && (
 									<Col lg={6} sm={4} xs={4}>
-										<img src={Orientation} alt="orientation" className="event-image" />
+										<img src={Flutter} alt="Flutter" className="event-image" />
 									</Col>
 								)}
 								{window.innerWidth >= 650 && window.innerWidth < 992 && (
